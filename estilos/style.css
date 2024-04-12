@@ -1,0 +1,474 @@
+
+.contenedor {
+    background-color: #002053; 
+    height: 1.5cm; 
+    width: 100%; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 9999; 
+  }
+ 
+  .contenedor h1 {
+    color: white;
+    text-align: center; 
+    padding: 10px 0; 
+    margin: 0; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top:0;
+  }
+  
+
+.contenedor-amarillo {
+    background-color: #FFD608; /* Color de fondo del contenedor */
+    padding: 20px; /* Relleno interno del contenedor */
+    top: calc(1cm + 10px); /* Distancia desde arriba (altura del contenedor azul + espacio adicional) */
+    display: flex; /* Alinear los elementos en fila */
+    align-items:center; /* Centrar verticalmente los elementos */
+  }
+ /* Estilo para los botones */
+/* Estilo para los botones */
+.imagen {
+    width: 200px; /* Ancho de la imagen */
+    margin-right: 150px; /* Espacio entre la imagen y los botones */
+  }
+  
+  /* Estilo para el contenedor de los botones */
+  .botones-container {
+    flex-grow: 1; /* El contenedor de botones ocupa todo el espacio disponible */
+  }
+  
+  /* Estilo para los botones */
+  .boton {
+    cursor: pointer;
+    background-color: transparent; /* Hacer el fondo transparente */
+    padding: 10px 25px;
+    border-radius: 5px;
+    position: relative; /* Ajusta la posición de los pseudo-elementos */
+    border: 1px solid #FFD608; /* Agrega un borde */
+    margin-right: 0cm; 
+    align-items: center;/* Añade 1cm de separación entre botones */
+  }
+  
+  /* Estilo para el símbolo de la flecha */
+  .boton::after {
+    content: "\25BE"; /* Código Unicode para la flecha hacia abajo */
+    position: absolute;
+    top: 50%;
+    right: 10px; /* Coloca la flecha a 10px desde el borde derecho */
+    transform: translateY(-50%) rotate(0deg); /* Gira la flecha hacia abajo inicialmente */
+    transition: transform 0.3s; /* Agrega una transición suave al giro */
+  }
+  
+  /* Cambia la rotación de la flecha cuando el checkbox está marcado */
+  input[type="checkbox"]:checked ~ .botones .boton::after {
+    transform: translateY(-50%) rotate(180deg); /* Gira la flecha hacia arriba cuando el checkbox está marcado */
+  }
+
+  .contenedor-azul {
+    background-color:  #002053; /* Color de fondo del contenedor */
+    height: 0cm; 
+    padding: 20px; /* Relleno interno del contenedor */
+    top: calc(3cm + 20px); /* Distancia desde arriba (altura del contenedor azul + espacio adicional) */
+    display: flex; /* Alinear los elementos en fila */
+    align-items:center; /* Centrar verticalmente los elementos */
+  }
+  /* Estilo para los botones */
+  .botonn {
+    cursor: pointer;
+    background-color: transparent; /* Hacer el fondo transparente */
+    padding: 10px 20px;
+    border-radius: 5px;
+    position:relative; /* Ajusta la posición de los pseudo-elementos */
+    border: 1px solid #002053; /* Agrega un borde */
+    color: aliceblue;
+    margin-right: 0.5cm; 
+    align-items: center;/* Añade 1cm de separación entre botones */
+    
+  }
+  
+  /* Estilo para el símbolo de la flecha */
+  .botonn::after {
+    content: "\25BE"; /* Código Unicode para la flecha hacia abajo */
+    position: absolute;
+    top: 50%;
+    right: 5px; /* Coloca la flecha a 10px desde el borde derecho */
+    transform: translateY(-50%) rotate(0deg); /* Gira la flecha hacia abajo inicialmente */
+    transition: transform 0.3s; /* Agrega una transición suave al giro */
+  }
+  
+  /* Cambia la rotación de la flecha cuando el checkbox está marcado */
+  input[type="checkbox"]:checked ~ .botones .botonn::after {
+    transform: translateY(-50%) rotate(180deg); /* Gira la flecha hacia arriba cuando el checkbox está marcado */
+  }
+  input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 0;
+    height: 0;
+    border: none;
+  }
+  .contenedor-imagen{
+    height: 0cm; 
+    padding: 20px; /* Relleno interno del contenedor */
+    top: calc(7cm + 20px); /* Distancia desde arriba (altura del contenedor azul + espacio adicional) */
+    display: flex; /* Alinear los elementos en fila */
+    align-items:center;
+    margin-top: 270px;
+  }
+  .imagen-largo {
+    width: 4000px; /* Cubre todo el ancho de la página */
+    height: 3cm; /* Largo específico de 3cm */
+    display: block; /* Asegura que la imagen se muestre como bloque */
+    margin-bottom: 2cm;
+    padding: -20px;
+    width: calc(95vw - 0cm); /* Ancho de la pantalla menos 3cm para la distancia */
+  }
+
+ /* Estilos para el campo de búsqueda */
+
+.contenedor-barrabusqueda .input-busqueda {
+  width: 95%; /* Ancho completo */
+  height: 1cm; /* Altura de 2cm */
+  padding: 10px; /* Espacio interno */
+  font-size: 16px; /* Tamaño de la fuente */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 5px; /* Borde redondeado */
+  margin-top: 40px; /* Margen superior de 10px */
+  box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
+  margin-left: 30px;
+}
+/* Estilos para el contenedor de botones con imágenes */
+.contenedor-botones-con-imagenes {
+  display: flex; /* Utilizar flexbox */
+  justify-content: center;
+  margin-top: 1cm; /*distancia al contenedor de arriba*/
+}
+
+/* Estilos para los botones con imágenes */
+.boton-con-imagen {
+  padding: 10px; /* Eliminar el relleno */
+  border: none; 
+  margin-right: 10px; /*la imagen a la derecha*/
+}
+
+/* Estilos para las imágenes dentro de los botones */
+.boton-con-imagen img {
+  width: 200px; 
+  height: auto; 
+ 
+}
+.contenedor-final-azul {
+  position: relative; /* Posición relativa para alinear pseudo-elementos */
+  width: 100%; /* Ancho completo de la pantalla */
+  height: 15cm; /* Altura de hasta 5cm */
+  background-color: #002053; /* Color de fondo azul */
+  margin-top: 3cm;
+}
+.linea-horizontal {
+  position: absolute; /* Posición absoluta */
+  top: 60%; /* Centrado verticalmente */
+  left: 0; /* Alinear en el borde izquierdo */
+  width: 100%; /* Ancho completo */
+  height: 1px; /* Grosor de la línea */
+  background-color: rgb(212, 243, 8); /* Color de la línea */
+}
+
+.redes-sociales{ 
+  color: #f6f2f2;/*color de la frase */
+  position: absolute; /* Posición absoluta */
+  top: 0.5cm; /* Distancia de 1cm desde la parte superior */
+  left: 10px; /* Distancia desde la izquierda */
+  font-weight: bold; /* Texto en negrita */
+  font-size: 20px;
+  margin-left: 200px;
+  
+}
+.redes-sociales img{
+  
+  margin: 20px;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+.imagen-abajo-redes {
+  position: absolute; /* Posición absoluta */
+  top: calc(3.5cm + 5px); /* Distancia de 3 cm más el tamaño del texto */
+  left: calc(4px + 1cm); /* Distancia de 3 cm desde la palabra "Redes Sociales" */
+}
+.linea-horizontal1 {
+  position: absolute; /* Posición absoluta */
+  top: 20%; /* Centrado verticalmente */
+  left: 0; /* Alinear en el borde izquierdo */
+  width: 50%; /* Ancho completo */
+  height: 1px; /* Grosor de la línea */
+  background-color: rgb(250, 250, 248); /* Color de la línea */
+}
+/* Estilos para la línea vertical */
+.linea-vertical {
+  position: absolute; /* Posición absoluta */
+  top: 5%; /* Centrado verticalmente */
+  left: 50%; /* Centrado horizontalmente */
+  height: 50%; /* Altura igual al contenedor */
+  width: 1px; /* Grosor de la línea */
+  background-color: white; /* Color de la línea */
+  transform: translateX(-50%); /* Centrar horizontalmente */
+}
+/* Estilos para el texto en la derecha */
+.texto-derecha {
+  position: absolute; /* Posición absoluta */
+  top: 30%; /* Centrado verticalmente */
+  left: calc(50% + 5px); /* Alineación a la derecha de la línea vertical */
+  transform: translateY(-50%); /* Centrado verticalmente */
+  text-align: center; /* Texto centrado */
+  color: white; /* Color del texto */
+  font-size: 20px; /* Tamaño de la fuente */
+  width: calc(50% - 10px); /* Ancho */
+  overflow-y: auto; /* Agregar barra de desplazamiento vertical si es necesario */
+}
+
+/* Estilos para el texto debajo de la línea horizontal */
+.texto-abajo {
+  position: absolute; /* Posición absoluta */
+  bottom: 1cm; /* Distancia de 1cm desde la parte inferior */
+  left: 0; /* Alinear en el borde izquierdo */
+  width: 100%; /* Ancho completo */
+  text-align: center; /* Texto centrado */
+  color: white; /* Color del texto */
+  font-size: 20px;
+}
+
+/* Cambia la rotación de la flecha cuando el checkbox está marcado */
+input[type="checkbox"]:checked ~ .botones .boton::after {
+  transform: translateY(-50%) rotate(180deg); /* Gira la flecha hacia arriba cuando el checkbox está marcado */
+}
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+.contenedor-azul label{
+  text-align: center;
+  font-size: 17px;
+  font-family:'Gill Sans', 'Gill Sans MT', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Trebuchet MS', sans-serif;
+}
+ /* Estilo para el símbolo de la flecha */
+ .contenedor-azul .boton::after {
+  content: "\25BE"; /* Código Unicode para la flecha hacia abajo */
+  position: absolute;
+  top: 50%;
+  right: 5px; /* Coloca la flecha a 10px desde el borde derecho */
+  transform: translateY(-50%) rotate(0deg); /* Gira la flecha hacia abajo inicialmente */
+  transition: transform 0.3s; /* Agrega una transición suave al giro */
+}
+
+.contenedor-azul label{
+  text-align: center;
+  font-size: 15px;
+  font-family:'Gill Sans', 'Gill Sans MT', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Trebuchet MS', sans-serif;
+}
+
+ /*------------------------------------------------------------------------------------------------------------*/
+  
+.contenedor_botonAnterior{
+    height: 35vh; /* Establece la altura del contenedor */
+    padding-left: 10cm;
+}
+ .contenedor_botonAnterior button{
+
+  margin-top: 180px;
+  height:35px;
+  width:80px;
+  background-color:#ffffff;
+  color:rgb(0, 0, 0);
+  border:2px solid #08298A;
+  
+  }
+  
+  .contenedor_recuperar{
+    margin-top:20px;
+    margin-left: 500px;
+    width: 400px;
+    text-align:left;
+  }
+  
+  .contenedor_recuperar h1
+  {
+   margin:0px;
+   font-size:37px;
+   color:#2E2E2E;
+  }
+  .contenedor_recuperar p
+  {
+   margin-top:15px;
+   font-size:18px;
+   color:#2E2E2E;
+   text-align: justify;
+  }
+  
+  .contenedor_recuperar li
+  {
+   list-style-type:none;
+   margin-top:10px;
+  }
+  .contenedor_recuperar li input[type="text"]
+  {
+   margin-top:10px;  
+   width:400px;
+   height:40px;
+   border-radius:5px;
+   padding-left:10px;
+   font-size:18px;
+   border:1px solid #BDBDBD;
+  }
+  .contenedor_recuperar li input[type="submit"]
+  {
+  height:35px;
+  width:80px;
+  margin-top:20px;
+  background-color:#084B8A;
+  color:white;
+  border:1px solid #08298A;
+  }
+  
+  /*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
+  
+  .container {
+    background-color: #002053;
+    margin-top: 5.6cm;
+    padding: 10px;
+    width: 80%; /* Ocupa todo el ancho de la pantalla */
+    margin-left: auto; /* Alineado horizontalmente */
+    margin-right: auto; /* Alineado horizontalmente */
+    height: 12cm;
+  }
+  .inner-container1 {
+    background-color: #ffffff; /* Color del contenedor a la derecha */
+    width: 1cm; /* Ancho del contenedor a la derecha */
+    height: 12cm; /* Alto del contenedor a la derecha */
+    margin-left: 0cm; /* Espacio entre los contenedores */
+  }
+    
+  
+  .inner-container {
+    background-color: #f7f7f7;
+    width: 14cm;
+    height: 12cm;
+    float: right;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.5);;
+  }
+  .inner-container h1{
+    text-align: center;
+    color:#002053;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .row {
+    
+    list-style: none;
+    margin-left: 40px;
+    color: #f6f2f2;
+    
+  
+}
+  .row li input[type="text"] {
+    
+      width: 200px;
+      height: 30px;
+      margin-top: 15px;
+      margin-right: 5px;
+      border-radius: 1%;
+  }
+
+
+.small-text {
+  font-size: small;
+  text-align: center;
+  margin-top: 1cm; /* Ajusta la distancia entre el texto y el borde inferior del contenedor */
+}
+.image-container {
+  width: 1cm; /* Ancho del contenedor a la derecha */
+  height: 1cm; /* Alto del contenedor a la derecha */
+  margin-left: 1cm; /* Espacio entre los contenedores */
+}
+
+.image-container img {
+  width: 13cm; /* Ancho del contenedor a la derecha */
+  height: 7cm; /* Alto del contenedor a la derecha */
+  margin-left: 0cm; /* Espacio entre los contenedores */
+  margin-top: 2cm;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.terms-container {
+  margin-top: 10px; /* Espacio entre los textboxes y el contenedor de términos */
+  margin-left: 35px;
+}
+
+.accept-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: rgb(249, 251, 251); /* Color de fondo del botón de aceptar */
+  border: black;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.hidden-checkbox {
+  display: none;
+}
+ /* Estilo para los botones */
+ .boton12 {
+  cursor: pointer;
+  background-color: #002053; /* Hacer el fondo transparente */
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: 1px solid #FFD608; /* Agrega un borde */
+  margin-right: 0cm; 
+  color: #f6f2f2;
+  text-align: center;
+  margin-left: 5.5cm;
+}
+
+
+/* Estilos generales para el contenedor de iconos */
+.iconos-redes-sociales {
+  display: flex; /* Muestra los iconos en fila */
+  justify-content: space-between; /* Distribuye los iconos con espacio entre ellos */
+  margin-top: 10px; /* Añade margen superior */
+}
+
+/* Estilos para cada icono de red social */
+.icono-red-social {
+  width: 40px; /* Ajusta el tamaño de los iconos */
+  height: 40px; /* Ajusta el tamaño de los iconos */
+  display: inline-block; /* Permite aplicar estilos a nivel de bloque */
+  border-radius: 50%; /* Crea un borde redondeado */
+  background-color: #fff; /* Color de fondo blanco */
+  text-align: center; /* Centra el texto dentro del icono */
+  line-height: 40px; /* Alinea el texto verticalmente */
+  cursor: pointer; /* Cambia el cursor a mano al pasar el mouse */
+  transition: transform 0.3s ease; /* Añade efecto de transición */
+}
+
+/* Icono de Facebook */
+.facebook {
+  background-color: #3B5998; /* Color de Facebook */
+}
+
+/* Icono de Instagram */
+.instagram {
+  background-color: #E1306C; /* Color de Instagram */
+}
+
+/* Efecto de pulsación al presionar el icono */
+.icono-red-social:hover {
+  transform: scale(1.1); /* Aumenta el tamaño del icono ligeramente */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Añade una sombra al presionar */
+}

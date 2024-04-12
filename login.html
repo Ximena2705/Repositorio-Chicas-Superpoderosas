@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login AUNAR Villavicencio</title>
+  <link rel="stylesheet" href="estilos/login.css">
+</head>
+<body>
+  <header>
+    <div class="barra-amarilla">
+      <img src="imagenes/aunar-logo.PNG" alt="Logo AUNAR" class="logo-aunar">
+      <h1 class="titulo-campus">CAMPUS AUNAR VILLAVICENCIO</h1>
+    </div>
+  </header>
+  <main>
+    <div class="contenedor">
+      <h2 class="titulo-sesion">Iniciar sesión</h2>
+      <form action="#">
+        <label for="usuario">Nombre de usuario:</label>
+        <input type="text" id="usuario" name="usuario" class="campo-usuario">
+        <label for="contrasena">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" class="campo-contrasena">
+        <a href="recuperar.html" class="olvidaste-contrasena">¿Olvidaste tu contraseña?</a> <button type="submit" class="boton-ingresar">Ingresar</button>
+        <div class="recordar-usuario">
+          <input type="checkbox" id="recordar-usuario" name="recordar-usuario">
+          <label for="recordar-usuario">Recordar nombre de usuario</label>
+        </div>
+        <a href="registrar.html" class="registrar-usuario">Registrar usuario</a> </form>
+    </div>
+  </main>
+</body>
+</html>

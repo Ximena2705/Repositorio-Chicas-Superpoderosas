@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registarse</title>
+    <link rel="stylesheet" type="text/css" href="estilos/style.css">
+
+</head>
+<body>
+    <!-- contenedor  aunar Villavicencio-->
+    <div class="contenedor">
+        <h1>Aunar Villavicencio</h1>
+    </div>
+
+    <div class="contenedor contenedor-amarillo">
+        <img src="imagenes/aunar-logo.PNG" alt="Imagen" class="imagen">
+
+  <!-- Botones 1 -->
+  <div class="botones">
+
+    <input type="checkbox" id="botonDesplegable1">
+    <label for="botonDesplegable1" class="boton boton1">Admisiones</label>
+
+    <input type="checkbox" id="botonDesplegable2">
+    <label for="botonDesplegable2" class="boton boton2">Estudiantes</label>
+
+    <input type="checkbox" id="botonDesplegable3">
+    <label for="botonDesplegable3" class="boton boton3">Docentes</label>
+
+    <input type="checkbox" id="botonDesplegable4">
+    <label for="botonDesplegable4" class=" boton4">Expoinnova</label>
+
+    <input type="checkbox" id="botonDesplegable5">
+    <label for="botonDesplegable5" class="boton5">Noticias</label>
+  </div>
+    </div>
+
+
+    <div class="contenedor contenedor-azul">
+        <div class="botones1">
+
+    <input type="checkbox" id="botonD1">
+    <label for="botonD1" class="botonn boton11">Institucional</label>
+
+    <input type="checkbox" id="botonD2">
+    <label for="botonD2" class="botonn boton22">Programas</label>
+
+    <input type="checkbox">
+    <label for="botonD3" class="botonn boton33">Proyeccion social</label>
+
+    <input type="checkbox" id="botonD4">
+    <label for="botonD4" class="botonn boton44">Investigacion</label>
+
+    <input type="checkbox" id="botonD5">
+    <label for="botonD5" class="botonn boton55">Bienestar</label>
+
+    <input type="checkbox" id="botonD6">
+    <label for="botonD5" class="botonn boton66">Internacionalizacion</label>
+
+    <input type="checkbox" id="botonD7">
+    <label for="botonD5" class="botonn boton77">Talento Humano</label>
+
+  </div>
+ </div>
+    <div class="container">
+   
+        <div class="inner-container">
+            <h1>CREAR CUENTA</h1>
+            <div class="row">
+              <li><input type="text" placeholder="Primer nombre">
+                <input type="text"  placeholder="Apellido"></li>
+                <li><input type="text" placeholder="Email">
+                <input type="text" placeholder="Télefono"> </li>
+                <li><input type="text" placeholder="Contraseña">
+                <input type="text" placeholder="Confirmar contraseña"></li>
+              </div>
+              <div class="terms-container">
+                <button id="accept-button" class="accept-button"></button>
+                <input type="hidden" id="accept-checkbox" class="hidden-checkbox">
+                <label for="accept-checkbox">Acepta términos y condiciones</label>
+              </div>
+              <input type="checkbox" id="botonD1">
+              <div><label class="boton12">Registrarse</label></div>
+              <p class="small-text">©Copyright 2022 – Derechos Reservados</p>
+        </div>
+        <div class="inner-container1">
+        <div class="image-container">
+          <img src="imagenes/imagen_registro.jpg" alt="Descripción de la imagen">
+        </div>
+        </div>
+        </div>
+        <script>
+          document.addEventListener("DOMContentLoaded", function() {
+            const acceptButton = document.getElementById('accept-button');
+            const acceptCheckbox = document.getElementById('accept-checkbox');
+          
+            acceptButton.addEventListener('click', function() {
+              if (acceptCheckbox.checked) {
+                acceptCheckbox.checked = false;
+                acceptButton.textContent = ' ';
+              } else {
+                acceptCheckbox.checked = true;
+                acceptButton.textContent = '√';
+              }
+            });
+          });
+          </script>
+    
+    </div>
+</body>
+</html>
