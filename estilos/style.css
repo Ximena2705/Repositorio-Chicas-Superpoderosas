@@ -1,6 +1,6 @@
 
 .contenedor {
-    background-color: #002053; 
+    background-color: #225184; 
     height: 1.5cm; 
     width: 100%; 
     position: fixed; 
@@ -10,7 +10,9 @@
   }
  
 
-
+*{
+  font-family:'Gill Sans', 'Gill Sans MT', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, 'Trebuchet MS', sans-serif;
+}
 
   
   .contenedor h1 {
@@ -24,7 +26,7 @@
   
 
 .contenedor-amarillo {
-    background-color: #FFD608; /* Color de fondo del contenedor */
+    background-color: #FFD608; /* Color de fondo del contenedor #034873*/
     padding: 20px; /* Relleno interno del contenedor */
     top: calc(1cm + 10px); /* Distancia desde arriba (altura del contenedor azul + espacio adicional) */
     display: flex; /* Alinear los elementos en fila */
@@ -70,7 +72,7 @@
   }
 
   .contenedor-azul {
-    background-color:  #002053; /* Color de fondo del contenedor */
+    background-color:  #225184; /* Color de fondo del contenedor */
     height: 0cm; 
     padding: 20px; /* Relleno interno del contenedor */
     top: calc(3cm + 20px); /* Distancia desde arriba (altura del contenedor azul + espacio adicional) */
@@ -79,16 +81,23 @@
   }
   /* Estilo para los botones */
   .botonn {
+   
     cursor: pointer;
     background-color: transparent; /* Hacer el fondo transparente */
     padding: 10px 20px;
     border-radius: 5px;
     position:relative; /* Ajusta la posición de los pseudo-elementos */
-    border: 1px solid #002053; /* Agrega un borde */
+    border: 1px solid #225184; /* Agrega un borde */
     color: aliceblue;
     margin-right: 0.5cm; 
     align-items: center;/* Añade 1cm de separación entre botones */
     
+  }
+  .botones1{
+    margin-top: -40px;
+  }
+  .botones1 input[type="checkbox"]{
+    margin-top: 50px;
   }
   
   /* Estilo para el símbolo de la flecha */
@@ -113,6 +122,32 @@
     height: 0;
     border: none;
   }
+
+  .contenedor_botonIniciar{
+    margin-top: 15px;
+    height: 100px; /* Establece la altura del contenedor */
+    padding-left: 10cm;
+}
+ .contenedor_botonIniciar button{
+  margin-left: 980px;
+  margin-top: -40px;
+  height:35px;
+  width:110px;
+  background-color:#FFD608;
+  color:rgb(0, 0, 0);
+  border:2px solid #fed50bcd;
+  }
+
+  .contenedor_botonIniciar button i {
+    vertical-align: middle;
+  }
+
+  .contenedor_botonIniciar button:hover{
+    background-color:#225184;
+    border:2px solid #22518496;
+    color: #ffffff;
+  }
+
   .contenedor-imagen{
     height: 0cm; 
     padding: 20px; /* Relleno interno del contenedor */
@@ -139,7 +174,7 @@
   font-size: 16px; /* Tamaño de la fuente */
   border: 1px solid #ccc; /* Borde */
   border-radius: 5px; /* Borde redondeado */
-  margin-top: 40px; /* Margen superior de 10px */
+  margin-top: -40px; /* Margen superior de 10px */
   box-sizing: border-box; /* Incluir el padding y el borde en el ancho total */
   margin-left: 30px;
 }
@@ -167,7 +202,7 @@
   position: relative; /* Posición relativa para alinear pseudo-elementos */
   width: 100%; /* Ancho completo de la pantalla */
   height: 15cm; /* Altura de hasta 5cm */
-  background-color: #002053; /* Color de fondo azul */
+  background-color: #225184; /* Color de fondo azul */
   margin-top: 3cm;
 }
 .linea-horizontal {
@@ -198,8 +233,8 @@
 }
 .imagen-abajo-redes {
   position: absolute; /* Posición absoluta */
-  top: calc(3.5cm + 5px); /* Distancia de 3 cm más el tamaño del texto */
-  left: calc(4px + 1cm); /* Distancia de 3 cm desde la palabra "Redes Sociales" */
+  margin-top: 160px; /* Distancia de 3 cm más el tamaño del texto */
+  margin-left: 230px;
 }
 .linea-horizontal1 {
   position: absolute; /* Posición absoluta */
@@ -284,32 +319,41 @@ input[type="checkbox"] {
     padding-left: 10cm;
 }
  .contenedor_botonAnterior button{
-
-  margin-top: 180px;
+  margin-left: -360px;
+  margin-top: 10px;
   height:35px;
   width:80px;
   background-color:#ffffff;
   color:rgb(0, 0, 0);
-  border:2px solid #08298A;
-  
+  border:2px solid #225184;
+  }
+
+  .contenedor_botonAnterior button:hover{
+    background-color:#e7e018;
+    border:2px solid #e7e018;
+    color: #000000;
   }
   
   .contenedor_recuperar{
-    margin-top:20px;
-    margin-left: 500px;
-    width: 400px;
+    border:0.5px solid #7f7f7f;
+    margin-top:250px;
+    margin-left: 430px;
+    width: 680px;
+    height: 320px;
     text-align:left;
   }
   
   .contenedor_recuperar h1
   {
-   margin:0px;
-   font-size:37px;
+   margin-left:20px;
+   font-size:30px;
    color:#2E2E2E;
   }
   .contenedor_recuperar p
   {
+   margin-left: 20px;
    margin-top:15px;
+   width: 640px;
    font-size:18px;
    color:#2E2E2E;
    text-align: justify;
@@ -319,11 +363,12 @@ input[type="checkbox"] {
   {
    list-style-type:none;
    margin-top:10px;
+   margin-left: 20px;
   }
   .contenedor_recuperar li input[type="text"]
   {
-   margin-top:10px;  
-   width:400px;
+   margin-top:0px;
+   width:630px;
    height:40px;
    border-radius:5px;
    padding-left:10px;
@@ -333,17 +378,21 @@ input[type="checkbox"] {
   .contenedor_recuperar li input[type="submit"]
   {
   height:35px;
-  width:80px;
-  margin-top:20px;
-  background-color:#084B8A;
+  width:642px;
+  margin-top:5px;
+  background-color:#225184;
   color:white;
-  border:1px solid #08298A;
+  border:1px solid #225184;
+  }
+  .contenedor_recuperar li input[type="submit"]:hover
+  {
+    background-color:#256ab3;
   }
   
   /*-----------------------------------------------------------------------------------------------------------------------------------------------------*/
   
   .container {
-    background-color: #002053;
+    background-color: #225184;
     margin-top: 5.6cm;
     padding: 10px;
     width: 80%; /* Ocupa todo el ancho de la pantalla */
@@ -368,7 +417,7 @@ input[type="checkbox"] {
   }
   .inner-container h1{
     text-align: center;
-    color:#002053;
+    color:#225184;
     font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -430,7 +479,7 @@ input[type="checkbox"] {
  /* Estilo para los botones */
  .boton12 {
   cursor: pointer;
-  background-color: #002053; /* Hacer el fondo transparente */
+  background-color: #225184; /* Hacer el fondo transparente */
   padding: 10px 25px;
   border-radius: 5px;
   border: 1px solid #FFD608; /* Agrega un borde */
@@ -463,7 +512,7 @@ input[type="checkbox"] {
 
 /* Icono de Facebook */
 .facebook {
-  background-color: #3B5998; /* Color de Facebook */
+  background-color: #225184; /* Color de Facebook */
 }
 
 /* Icono de Instagram */
@@ -475,4 +524,11 @@ input[type="checkbox"] {
 .icono-red-social:hover {
   transform: scale(1.1); /* Aumenta el tamaño del icono ligeramente */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Añade una sombra al presionar */
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+.contenedor_logo_biblioteca img{
+  margin-left: 500px;
+  width: 500px;
+  height: 140px;
 }
