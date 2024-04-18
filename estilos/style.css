@@ -255,6 +255,7 @@
   margin-top: 1cm; /*distancia al contenedor de arriba*/
 }
 
+
 /* Estilos para los botones con imágenes */
 .boton-con-imagen {
   padding: 10px; /* Eliminar el relleno */
@@ -732,4 +733,58 @@ input[type="checkbox"] {
   border-radius: 10px;
   padding: 20px;
 }
+/*----------------------------tesis-------------------------------------------------------*/
 
+/* Estilos para el contenedor de botones con imágenes */
+.contenedor-botones-grados {
+  display: flex; /* Utilizar flexbox */
+  justify-content: center;
+  margin-top: 1cm; /*distancia al contenedor de arriba*/
+  margin-right: 30px; 
+}
+
+
+/* Estilos para los botones con imágenes */
+.boton-con-imagen-grados {
+  padding: 30px; /* Eliminar el relleno */
+  border: none; 
+  margin-right: 10px; /*la imagen a la derecha*/
+  background-color: #ffffff;
+}
+
+/* Estilos para las imágenes dentro de los botones */
+.boton-con-imagen-grados img {
+  width: 130px; 
+  height: auto; 
+ 
+}
+
+/*-----contenedor botones de grados-----*/
+.contenedor-botones-grado{
+  margin-top: 10px;
+  display: flex; /* Utiliza flexbox para alinear los botones */
+  justify-content: center; /* Alinea los botones al centro horizontal */
+}
+
+.botones-de-grado {
+  background-color: #1c06a5;
+  border: black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 46px; /* Espacio horizontal de 1cm entre botones */
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+/*----efectos---del---boton---*/
+.botones-de-grado:hover {
+  background-color: #09e9de; /* Cambia el color de fondo al pasar el cursor */
+  color:#000000;
+}
+
+.botones-de-grado:active {
+  transform: translateY(10px); /* Agrega sombreado al hacer clic */
+}
