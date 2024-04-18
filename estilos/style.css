@@ -23,7 +23,75 @@
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     top:0;
   }
+
   
+  /* Contenedor principal investigacion */
+  .contenedor-principal {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 0; /* Ejemplo: 50 píxeles de margen inferior */
+    position: relative;
+  position: absolute;
+  top: 500px; /* Adjust the value as needed */
+  left: 0;
+  width: 100%;
+  }
+
+  /* Contenedor de búsqueda */
+  .contenedor-busqueda {
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+
+  /* Barra de búsqueda */
+  .barra-busqueda {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  /* Icono de lupa */
+  .icono-lupa {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  /* Contenedor de filtros */
+  .contenedor-filtros {
+    width: 50%;
+    margin-left: 20px;
+  }
+
+  /* Barras de filtro */
+  .barra-filtro {
+    background-color: #ffff00; /* Amarillo */
+    padding: 10px;
+   
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  /* Títulos de las barras de filtro */
+  .titulo-filtro {
+    margin-bottom: 5px;
+  }
+
+  .contenedor-principal{
+    margin-top: -100px;
+    margin-left: 0px;
+  }
+
+
 
 .contenedor-amarillo {
     background-color: #FFD608; /* Color de fondo del contenedor #034873*/
@@ -123,28 +191,30 @@
     border: none;
   }
 
-  .contenedor_botonIniciar{
+  .contenedor_botonIniciar {
+    margin-left: 940px;
     margin-top: 15px;
-    height: 100px; /* Establece la altura del contenedor */
+    margin-bottom: 25px;
     padding-left: 10cm;
-}
- .contenedor_botonIniciar button{
-  margin-left: 980px;
-  margin-top: -40px;
-  height:35px;
-  width:110px;
-  background-color:#FFD608;
-  color:rgb(0, 0, 0);
-  border:2px solid #fed50bcd;
   }
-
+ 
+  .contenedor_botonIniciar button {
+    text-align: center;
+    height: 35px;
+    align-items: center;
+    background-color: #FFD608;
+    color: #ffffff;
+    border: 2px solid #fed50bcd;
+    font-size: 18px;
+  }
+  
   .contenedor_botonIniciar button i {
-    vertical-align: middle;
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
   }
-
-  .contenedor_botonIniciar button:hover{
-    background-color:#225184;
-    border:2px solid #22518496;
+  
+  .contenedor_botonIniciar button:hover {
+    background-color: #225184;
+    border: 2px solid #22518496;
     color: #ffffff;
   }
 
@@ -532,3 +602,134 @@ input[type="checkbox"] {
   width: 500px;
   height: 140px;
 }
+
+.linea-horizontal2 {
+  margin-left: 140px;
+  margin-top: 50px;
+  top: 60%;
+  left: 0;
+  width: 80%;
+  height: 1px;
+  background-color: rgb(212, 243, 8);
+}
+
+.contenedor_bibliotecas_virtuales {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos del contenedor */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+.contenedor_bibliotecas_virtuales2{
+  color: #225184;
+  margin-top: 50px;
+  margin-left: 190px;
+  padding: 20px 0; 
+  font-size: 20px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  flex-grow: 1; /* Hace que este div ocupe todo el espacio restante */
+}
+.contenedor_botonBiblioteca button{
+  margin-top: 50px;
+  margin-right: 230px;
+ height:40px;
+  width:380px;
+  border:2px solid #22518496;
+ background-color:#225184; 
+  color:rgb(255, 255, 255);
+  font-size: 18px;
+  
+}
+
+ 
+  .contenedor_botonBiblioteca button:hover{
+    background-color:#FFD608;
+    border:2px solid #fed50bcd;
+    color: #ffffff;
+  }
+
+  .contenedor-imagenesBiblioteca {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; /* Las filas se colocarán una encima de la otra */
+  }
+  
+  .fila {
+    display: flex;
+    justify-content: space-between; /* Las imágenes se distribuirán uniformemente en la fila */
+    margin-bottom: 20px; /* Espacio entre las filas */
+    margin-left: 10px;
+  }
+  
+  .fila a {
+    width: calc(27.33% - 10px); /* Ancho del 33.33% para cada imagen, menos el borde */
+    border: 1px solid #ccc; /* Borde alrededor de cada imagen */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.imagen:last-child {
+  margin-right: 0; /* Elimina el margen derecho para la última imagen en cada fila */
+}
+
+.contenedor-fotosBiblioteca img{
+  margin-top: 50px;
+  margin-left: 250px;
+}
+/*---------------------------------------------------------------------------*/
+.contenedor-perfil {
+  display: flex;
+  justify-content: space-between; /* Alinea los elementos a los extremos */
+  max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  
+}
+.perfil {
+  width: calc(66.66% - 10px); /* Ancho del perfil */
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-right: 20px; /* Margen derecho para separar del otro contenedor */
+  text-align: center;
+}
+
+.perfil hr {
+  border: none; /* Elimina el borde predeterminado */
+  border-top: 1px solid #ccc; /* Agrega un borde superior */
+  margin: 5px 0; /* Espacio por encima y por debajo de la línea */
+}
+.foto-perfil {
+  margin-right: 20px;
+}
+
+.foto-perfil img {
+  width: 150px; /* Ajusta el tamaño de la foto según sea necesario */
+  border-radius: 50%; /* Para hacer la foto de perfil redonda */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+}
+
+.informacion-perfil h2 {
+  margin-top: 0;
+}
+
+.informacion-perfil p {
+  margin-top: 0;
+}
+
+.informacion-perfil ul {
+  list-style: none;
+  padding: 0;
+}
+
+.informacion-perfil li {
+  margin-bottom: 5px;
+}
+
+.trabajos-subidos {
+  width: calc(33.33% - 10px); /* Ancho de los trabajos subidos */
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
