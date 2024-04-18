@@ -25,27 +25,20 @@
   }
 
   
-  /* Contenedor principal investigacion */
   .contenedor-principal {
     display: flex;
     max-width: 800px;
-    margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 0; /* Ejemplo: 50 píxeles de margen inferior */
-    position: relative;
-  position: absolute;
-  top: 500px; /* Adjust the value as needed */
-  left: 0;
-  width: 100%;
+    margin-bottom: 0; 
   }
 
   /* Contenedor de búsqueda */
   .contenedor-busqueda {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 20%;
   }
 
   /* Barra de búsqueda */
@@ -73,7 +66,7 @@
   .barra-filtro {
     background-color: #ffff00; /* Amarillo */
     padding: 10px;
-   
+    border-radius: 5px;
     margin-bottom: 5px;
     font-weight: bold;
     font-size: 14px;
@@ -87,8 +80,8 @@
   }
 
   .contenedor-principal{
-    margin-top: -100px;
-    margin-left: 0px;
+    margin-top: -200px;
+    margin-left: -300px;
   }
 
 
