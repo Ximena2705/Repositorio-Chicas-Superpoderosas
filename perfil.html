@@ -3,10 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Producción Editorial</title>
+<title>Mi perfil</title>
 <link rel="stylesheet" type="text/css" href="estilos/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<script src="animaciones.js"></script>
 </head>
 <body>
   <!-- contenedor  aunar Villavicencio-->
@@ -67,7 +66,7 @@
     </div>
     <!--conetendor imagen-->
    <div class="contenedor-imagen">
-    <img src="imagenes\logo-produccion-editorial.jpeg" alt="Imagen" class="imagen-largo">
+    <img src="imagenes/logo-perfil.jpeg" alt="Imagen" class="imagen-largo">
   </div>
   <div class="contenedor_botonIniciar">
     <button onclick="redirigir2()">
@@ -88,67 +87,32 @@
     </script>
   </div>
     <!--conetendor de busqueda-->
-    <div class="contenedor_logo_biblioteca">
-        <img src="imagenes\LOGO-BIBLIOTECA.png" alt="logo_biblioteca">
-    </div> 
-    <div class="contenedor_biblioteca">
-      <div class="linea-horizontal2"></div>
-    </div> 
-    <div class="contenedor_bibliotecas_virtuales">
-      <div class="contenedor_bibliotecas_virtuales2">
-        <h2>BIBLIOTECAS VIRTUALES</h2>
-      </div>
-      <div class="contenedor_botonBiblioteca">
-        <button onclick="redirigir()">Ingresa aquí para consultar el catálogo en línea</button>
-            <script>
-                function redirigir() {
-                // Redirigir a otro HTML
-                window.location.href = "libros.html";
-                }
-            </script>
+    <div class="contenedor-perfil">
+    <div class="perfil">
+        <div class="foto-perfil">
+          <img src="imagenes\perfil1.jpg" alt="Foto de perfil">
+        </div>
+        <div class="informacion-perfil">
+          <h2>Carlos Arturo Del Pilar Castillo</h2>
+          <hr>
+          
+          <ul>
+            <li><strong>Edad:</strong> 23 años</li>
+            <li><strong>Correo electrónico:</strong> carlosdelpilar@gmail.com</li>
+            <li><strong>Profesión:</strong> Gatógrafo</li>
+            <li><strong>Programa:</strong> Diseño Visual</li>
+            <li><strong>Semestre:</strong> V</li>
+            <!-- Agrega más datos personales según sea necesario -->
+          </ul>
+        </div>
     </div>
-  </div>
-  <div class="contenedor-imagenesBibliotecas">
-    <div class="fila">
-      <a href="https://www.biomedcentral.com/journals">
-        <img src="imagenes\biblioteca\biomedcentral.png" alt="Imagen 1">
-      </a>
-      <a href="https://www.forumdecomercio.org/tradeforumhome/">
-        <img src="imagenes\biblioteca\centrodecomercio.png" alt="Imagen 2">
-      </a>
-      <a href="https://elibro.net/es/lc/aunarvillavicencio/login_usuario/?next=/es/lc/aunarvillavicencio/inicio/">
-        <img src="imagenes\biblioteca\e-libro-logo.png" alt="Imagen 3">
-      </a>
-    </div>
-    <div class="fila">
-      <a href="https://www.ecoeediciones.com/biblioteca-digital/">
-        <img src="imagenes\biblioteca\ECOE-150x126-1.png" alt="Imagen 4">
-      </a>
-      <a href="https://www.eumed.net/es">
-        <img src="imagenes\biblioteca\eumed.png" alt="Imagen 5">
-      </a>
-      <a href="https://books.google.com/">
-        <img src="imagenes\biblioteca\googlebooks.png" alt="Imagen 6">
-      </a>
-    </div>
-    <div class="fila">
-      <a href="https://www.loc.gov/">
-        <img src="imagenes\biblioteca\libraryofcongress.jpg" alt="Imagen 7" width="300px" height="300px" >
-      </a>
-      <a href="https://www.redib.org/">
-        <img src="imagenes\biblioteca\redib.png" alt="Imagen 8" >
-      </a>
-      <a href="https://www.sciencedirect.com/browse/journals-and-books">
-        <img src="imagenes\biblioteca\sciencedirect.png" alt="Imagen 9">
-      </a>
-    </div>
-    </div>
-
-    <div class="contenedor-fotosBiblioteca">
-      <img src="imagenes\biblioteca\42.1-1024x682.jpg" alt="Imagen 1" id="imagen1">
-      <img src="imagenes\biblioteca\45-1024x682.jpg" alt="Imagen 2" id="imagen2" style="display: none;">
-      <img src="imagenes\biblioteca\48-1024x682.jpg" alt="Imagen 3" id="imagen3" style="display: none;">
-      <img src="imagenes\biblioteca\50-1024x682.jpg" alt="Imagen 4" id="imagen4" style="display: none;">
+        <div class="trabajos-subidos">
+            <h2>Documentos Subidos</h2>
+            <div class="trabajo">
+              <i class="far fa-file-pdf"></i> <!-- Icono de PDF -->
+              <a href="https://www.buscalibre.com.co/libro-en-la-mente-de-un-gato/9788491873198/p/51101018">En la Mente de un Gato</a> <!-- Enlace al PDF -->
+            </div>
+          </div>
     </div>
     <!--conetendor imagenes y botones-->
 
