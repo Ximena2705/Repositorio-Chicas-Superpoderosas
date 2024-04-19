@@ -90,23 +90,20 @@
         </div>
         </div>
         </div>
-        <script>
-          document.addEventListener("DOMContentLoaded", function() {
-            const acceptButton = document.getElementById('accept-button');
-            const acceptCheckbox = document.getElementById('accept-checkbox');
-          
-            acceptButton.addEventListener('click', function() {
-              if (acceptCheckbox.checked) {
-                acceptCheckbox.checked = false;
-                acceptButton.textContent = ' ';
-              } else {
-                acceptCheckbox.checked = true;
-                acceptButton.textContent = '√';
-              }
-            });
-          });
-          </script>
-    
-    </div>
+        
+        <div class="contenedor_botonAnterior">
+          <button onclick="redirigir()">Login</button>
+              <script>
+                  function redirigir() {
+                  // Redirigir a otro HTML
+                  window.location.href = "login.html";
+                  }
+              </script>
+      </div>
+  </div>
+
+
+
+
 </body>
 </html>
