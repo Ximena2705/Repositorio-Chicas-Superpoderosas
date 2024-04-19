@@ -5,8 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Trabajos de grado</title>
 <link rel="stylesheet" type="text/css" href="estilos/style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-VCiGxxsNX9P1hnyXxqGr/Q0vhrDcA6KxGFtuSbGYxiyB7U1Zeb6zjOQ+pEZqUuXz" crossorigin="anonymous">
-</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></head>
 <body>
   <!-- contenedor  aunar Villavicencio-->
     <div class="contenedor">
@@ -66,21 +65,51 @@
     </div>
     <!--conetendor imagen-->
    <div class="contenedor-imagen">
-    <img src="imagenes/imagen_repositorio.PNG" alt="Imagen" class="imagen-largo">
+    <img src="imagenes/logo-trabajos.jpeg" alt="Imagen" class="imagen-largo">
   </div>
   <div class="contenedor_botonIniciar">
-      <button onclick="redirigir()">Iniciar sesión</button>
-          <script>
-              function redirigir() {
-              // Redirigir a otro HTML
-              window.location.href = "login.html";
-              }
-          </script>
+    <button onclick="redirigir2()">
+      <i class="fas fa-user"></i>
+    </button>
+    <script>
+      function redirigir2() {
+        // Redirigir a otro HTML
+        window.location.href = "perfil.html";
+      }
+    </script>
+    <button onclick="redirigir()">Iniciar sesión</button>
+    <script>
+      function redirigir() {
+        // Redirigir a otro HTML
+        window.location.href = "login.html";
+      }
+    </script>
   </div>
     <!--conetendor de busqueda-->
     <div class="contenedor-barrabusqueda">
       <input type="text" placeholder="Buscar..." class="input-busqueda">
     </div>
+
+    <!---contenedor trabajo de grado-->
+    <div class="contenedor-imagenes-de-grados">
+      <div class="contenedor-botones-grados">
+        <button class="boton-con-imagen-grados">
+            <img src="imagenes/diplomado.webp" alt="Imagen 1">
+        </button>
+        <button class="boton-con-imagen-grados">
+            <img src="imagenes/imagen-grado.webp" alt="Imagen 2">
+        </button>
+        <button class="boton-con-imagen-grados">
+            <img src="imagenes/pregrado.webp" alt="Imagen 2">
+        </button>
+        
+      </div>
+      <div class="contenedor-botones-grado">
+        <button class="botones-de-grado">Diplomados</button>
+        <button class="botones-de-grado">Pregrado</button>
+        <button class="botones-de-grado">Tecnologos</button>
+      </div>
+      </div>
     <!--conetendor imagenes y botones-->
 
   <div class="contenedor-final-azul">

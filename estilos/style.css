@@ -87,7 +87,7 @@
 
 .contenedor-amarillo {
     background-color: #FFD608; /* Color de fondo del contenedor #034873*/
-    padding: 20px; /* Relleno interno del contenedor */
+    padding: 45px; /* Relleno interno del contenedor */
     top: calc(1cm + 10px); /* Distancia desde arriba (altura del contenedor azul + espacio adicional) */
     display: flex; /* Alinear los elementos en fila */
     align-items:center; /* Centrar verticalmente los elementos */
@@ -215,6 +215,15 @@
     width: calc(95vw - 0cm); /* Ancho de la pantalla menos 3cm para la distancia */
   }
 
+  .contenedor-imagen-universidad{
+    margin-top: 50px;
+  }
+
+.contenedor-imagen-universidad img{
+    margin-left: 35px;
+  width: 1450px;
+    height: 650px;
+  }
  /* Estilos para el campo de búsqueda */
 
 .contenedor-barrabusqueda .input-busqueda {
@@ -757,8 +766,8 @@ input[type="checkbox"] {
 }
 /*----efectos---del---boton---*/
 .botones-de-grado:hover {
-  background-color: #09e9de; /* Cambia el color de fondo al pasar el cursor */
-  color:#000000;
+  background-color: #FFD608; /* Cambia el color de fondo al pasar el cursor */
+  color:#fdfdfd;
 }
 
 .botones-de-grado:active {
