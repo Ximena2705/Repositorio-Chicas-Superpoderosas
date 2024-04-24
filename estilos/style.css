@@ -599,67 +599,37 @@ input[type="checkbox"] {
   background-color: rgb(212, 243, 8);
 }
 
-.contenedor_bibliotecas_virtuales {
-  display: flex;
-  justify-content: space-between; /* Alinea los elementos a los extremos del contenedor */
-  align-items: center; /* Centra verticalmente los elementos */
+.contenedor-botonesEditorial {
+  float: left; /* Alinea los botones a la izquierda */
+  margin-left: 200px;
+  margin-top: 50px;
 }
 
-.contenedor_bibliotecas_virtuales2{
-  color: #225184;
-  margin-top: 50px;
-  margin-left: 190px;
-  padding: 20px 0; 
+.contenedor-botonesEditorial button {
+  width: 150px;
+  height: 50px;
   font-size: 20px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  flex-grow: 1; /* Hace que este div ocupe todo el espacio restante */
+  margin-top: 40px;
+  display: block; /* Hace que los botones ocupen todo el ancho disponible */
+  margin-bottom: 10px; /* Agrega un espacio entre cada botón */
+  background-color: #225184;
+  color: #ffffff;
+  border: #225184;
 }
-.contenedor_botonBiblioteca button{
-  margin-top: 50px;
-  margin-right: 230px;
- height:40px;
-  width:380px;
-  border:2px solid #22518496;
- background-color:#225184; 
-  color:rgb(255, 255, 255);
-  font-size: 18px;
+.contenedor-botonesEditorial button:hover{
+  background-color: #FFD608;
+  border: #FFD608;
+}
+
+.contenedor-fotosBiblioteca {
+  overflow: hidden; /* Para que los elementos floten correctamente */
   
 }
 
- 
-  .contenedor_botonBiblioteca button:hover{
-    background-color:#FFD608;
-    border:2px solid #fed50bcd;
-    color: #ffffff;
-  }
-
-  .contenedor-imagenesBiblioteca {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column; /* Las filas se colocarán una encima de la otra */
-  }
+.contenedor-fotosBiblioteca img {
+  margin-left: 200px;/* Alinea la imagen a la derecha */
+  width: 900px;
   
-  .fila {
-    display: flex;
-    justify-content: space-between; /* Las imágenes se distribuirán uniformemente en la fila */
-    margin-bottom: 20px; /* Espacio entre las filas */
-    margin-left: 10px;
-  }
-  
-  .fila a {
-    width: calc(27.33% - 10px); /* Ancho del 33.33% para cada imagen, menos el borde */
-    border: 1px solid #ccc; /* Borde alrededor de cada imagen */
-    border-radius: 5px; /* Bordes redondeados */
-    margin-right: 10px; /* Espacio entre las imágenes */
-}
-
-.imagen:last-child {
-  margin-right: 0; /* Elimina el margen derecho para la última imagen en cada fila */
-}
-
-.contenedor-fotosBiblioteca img{
-  margin-top: 50px;
-  margin-left: 250px;
 }
 /*---------------------------------------------------------------------------*/
 .contenedor-perfil {

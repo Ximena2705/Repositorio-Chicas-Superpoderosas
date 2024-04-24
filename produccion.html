@@ -15,7 +15,10 @@
     </div>
 
     <div class="contenedor contenedor-amarillo">
+      <a href="index.html">
         <img src="imagenes/aunar_logo_azul.PNG" alt="Imagen" class="imagen">
+      </a>
+        
 
   <!-- Botones 1 -->
   <div class="botones">
@@ -87,62 +90,46 @@
       }
     </script>
   </div>
-    <!--conetendor de busqueda-->
-    <div class="contenedor_logo_biblioteca">
-        <img src="imagenes\LOGO-BIBLIOTECA.png" alt="logo_biblioteca">
-    </div> 
-    <div class="contenedor_biblioteca">
-      <div class="linea-horizontal2"></div>
-    </div> 
-    <div class="contenedor_bibliotecas_virtuales">
-      <div class="contenedor_bibliotecas_virtuales2">
-        <h2>BIBLIOTECAS VIRTUALES</h2>
-      </div>
-      <div class="contenedor_botonBiblioteca">
-        <button onclick="redirigir()">Ingresa aquí para consultar el catálogo en línea</button>
-            <script>
-                function redirigir() {
-                // Redirigir a otro HTML
-                window.location.href = "libros.html";
-                }
-            </script>
-    </div>
+  <div class="contenedor-editorial">
+    <div class="contenedor-botonesEditorial">
+      <button onclick="redirigir3()">
+        <i class="fas fa-newspaper" style="color: white;"></i>&nbsp; Artículos
+      </button>
+      <script>
+        function redirigir3() {
+          // Redirigir a otro HTML
+          window.location.href = "articulos.html";
+          
+        }
+      </script>
+      <button onclick="redirigir4()">
+        <i class="fas fa-book-open" style="color: white;"></i>&nbsp; Revistas
+      </button>
+      <script>
+        function redirigir4() {
+          // Redirigir a otro HTML
+          window.location.href = "revistas.html";
+        }
+      </script>
+      <button onclick="redirigir5()">
+        <i class="fas fa-book" style="color: white;"></i>&nbsp; Libros
+      </button>
+      <script>
+        function redirigir5() {
+          // Redirigir a otro HTML
+          window.location.href = "libros.html";
+        }
+      </script>
+      <button onclick="redirigir6()">
+        <i class="fas fa-comments" style="color: white;"></i>&nbsp; Opiniones
+      </button>
+      <script>
+        function redirigir6() {
+          // Redirigir a otro HTML
+          window.location.href = "opiniones.html";
+        }
+      </script>
   </div>
-  <div class="contenedor-imagenesBibliotecas">
-    <div class="fila">
-      <a href="https://www.biomedcentral.com/journals">
-        <img src="imagenes\biblioteca\biomedcentral.png" alt="Imagen 1">
-      </a>
-      <a href="https://www.forumdecomercio.org/tradeforumhome/">
-        <img src="imagenes\biblioteca\centrodecomercio.png" alt="Imagen 2">
-      </a>
-      <a href="https://elibro.net/es/lc/aunarvillavicencio/login_usuario/?next=/es/lc/aunarvillavicencio/inicio/">
-        <img src="imagenes\biblioteca\e-libro-logo.png" alt="Imagen 3">
-      </a>
-    </div>
-    <div class="fila">
-      <a href="https://www.ecoeediciones.com/biblioteca-digital/">
-        <img src="imagenes\biblioteca\ECOE-150x126-1.png" alt="Imagen 4">
-      </a>
-      <a href="https://www.eumed.net/es">
-        <img src="imagenes\biblioteca\eumed.png" alt="Imagen 5">
-      </a>
-      <a href="https://books.google.com/">
-        <img src="imagenes\biblioteca\googlebooks.png" alt="Imagen 6">
-      </a>
-    </div>
-    <div class="fila">
-      <a href="https://www.loc.gov/">
-        <img src="imagenes\biblioteca\libraryofcongress.jpg" alt="Imagen 7" width="300px" height="300px" >
-      </a>
-      <a href="https://www.redib.org/">
-        <img src="imagenes\biblioteca\redib.png" alt="Imagen 8" >
-      </a>
-      <a href="https://www.sciencedirect.com/browse/journals-and-books">
-        <img src="imagenes\biblioteca\sciencedirect.png" alt="Imagen 9">
-      </a>
-    </div>
-    </div>
 
     <div class="contenedor-fotosBiblioteca">
       <img src="imagenes\biblioteca\42.1-1024x682.jpg" alt="Imagen 1" id="imagen1">
@@ -150,6 +137,7 @@
       <img src="imagenes\biblioteca\48-1024x682.jpg" alt="Imagen 3" id="imagen3" style="display: none;">
       <img src="imagenes\biblioteca\50-1024x682.jpg" alt="Imagen 4" id="imagen4" style="display: none;">
     </div>
+  </div>
     <!--conetendor imagenes y botones-->
 
   <div class="contenedor-final-azul">
