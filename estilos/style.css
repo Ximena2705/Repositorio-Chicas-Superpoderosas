@@ -79,8 +79,9 @@
   }
 
   .contenedor-principal{
-    margin-top: -200px;
-    margin-left: -300px;
+    margin-top: -10px;
+    margin-left: 50px;
+
   }
 
 
@@ -903,5 +904,102 @@ input[type="checkbox"] {
   .boton-ingresar:active {
     transform: scale(0.95);
   }
+
+  /*----------------------------------------LIBROS-------------------------------*/
   
+
+  .container-busquedapor {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    width: 400px;
+    margin-left: 25px;
+    border: 1px solid #ccc; /* Agrega un borde de color gris */
+    border-radius: 5px; /* Agrega bordes redondeados */
+    padding: 10px; 
+    position: relative;
+}
+
+.boton-busqueda {
+  position: absolute;
+  margin-right: 12px; /* Cambia este valor según sea necesario */
+  right: 0;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.boton-busqueda i {
+  color: #555555; /* Color del icono, puedes ajustarlo según tus preferencias */
   
+}
+
+.container-buscarpor {
+    display: flex;
+    align-items: center;
+}
+
+
+.buscar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.container-filtrar {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtrar-item {
+    background-color: #FFD608; /* Amarillo */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    border-color: #FFD608;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.container-filtrar .filtrar-item:hover {
+  background-color: #034873;
+  color: #ffffff;
+  border-color: #034873;
+}
+
+.ruta {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.ruta ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ruta ol li {
+  display: inline;
+}
+
+.ruta ol li:not(:last-child):after {
+  content: " / ";
+  margin: 0 5px;
+}
+
+.ruta ol li a {
+  text-decoration: none;
+  color: #0366d6; /* Color azul, puedes cambiarlo según tus preferencias */
+}
+
+.ruta ol li a:hover {
+  text-decoration: underline;
+}
+
