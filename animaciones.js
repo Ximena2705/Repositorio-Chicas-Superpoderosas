@@ -25,3 +25,5 @@ document.addEventListener("DOMContentLoaded", function() {
       setInterval(cambiarImagen, 5000);
     }, 1000); // Retraso de 1 segundo
   });
+
+
