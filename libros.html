@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Libros AUNAR</title>
+<title>Libros</title>
 <link rel="stylesheet" type="text/css" href="estilos/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></head>
+<script src="animaciones2.js"></script>
 <body>
   <!-- contenedor  aunar Villavicencio-->
     <div class="contenedor">
@@ -88,21 +89,34 @@
       }
     </script>
   </div>
-  <div class="contenedor-principal">
-    <div class="contenedor-barrabusqueda">
-       <input type="text" class="barra-busqueda" placeholder="Buscar...">
-       <span class="icono-lupa"> </span>
-     </div>
-     <div class="contenedor-filtros">
-       <div class="barra-filtro">Fecha de publicación</div>
-       <div class="barra-filtro">Autores</div>
-       <div class="barra-filtro">Títulos</div>
-       <div class="barra-filtro">Temas</div>
-       <div class="barra-filtro">Directores</div>
-     </div>
-   </div>
 
+  <div class="ruta">
+    <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="produccion.html">Producción Editorial</a></li>
+        <li><a href="libros.html">Libros</a></li>
+    </ol>
+</div>
+  
 
+<div class="contenedor-general">
+  <div class="container-busquedapor">
+    <div class="container-buscarpor">
+      <input type="text" class="buscar" placeholder="Buscar...">
+      <button class="boton-busqueda">
+          <i class="fas fa-search"></i> 
+      </button>
+  </div>
+    <div class="container-filtrar">
+        <button class="filtrar-item">Fecha de publicación</button>
+        <button class="filtrar-item">Autores</button>
+        <button class="filtrar-item">Títulos</button>
+        <button class="filtrar-item">Temas</button>
+        <button class="filtrar-item">Directores</button>
+    </div>
+</div>
+ 
+  
     <!--conetendor imagenes y botones-->
 
   <div class="contenedor-final-azul">
