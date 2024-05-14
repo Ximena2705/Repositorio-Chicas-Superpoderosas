@@ -1003,3 +1003,71 @@ input[type="checkbox"] {
   text-decoration: underline;
 }
 
+/*----------------------------------------------opiniones-------------------------------------*/
+.perfil-opinion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.perfil-opinion img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nombre {
+  font-weight: bold;
+}
+
+.comentario {
+  margin-bottom: 10px;
+}
+
+.valoracion span {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.like, .dislike {
+  font-size: 1.5em;
+  cursor: pointer; /* Agregamos un cursor de puntero */
+}
+
+.like.clicked {
+  color: green; /* Cambiar el color al hacer clic */
+  /* Otras animaciones o estilos que desees aplicar */
+  transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.like.clicked::after {
+  content: "\2714"; /* Cambiar el contenido del icono */
+}
+
+.opinion.clicked {
+  background-color: #f0f0f0; /* Cambiamos el color de fondo cuando se hace clic */
+  /* Otras animaciones o estilos que desees aplicar */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.opiniones {
+  display: flex;
+  flex-direction: column;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.opinion {
+  width: calc(33.33% - 20px); /* Se resta el doble del margen deseado */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 10px; /* Margen a la izquierda */
+  margin-right: 10px; /* Margen a la derecha */
+  text-align: justify;
+}
