@@ -9,3 +9,13 @@ likes.forEach(like => {
     this.parentElement.parentElement.classList.toggle('clicked');
   });
 });
+
+function enviarComentario() {
+  var comentario = document.getElementById("comment").value;
+  // Aquí puedes hacer algo con el comentario, como enviarlo a un servidor o mostrarlo en la página.
+  // Por ejemplo, puedes agregar el código para mostrar el comentario en la página.
+  alert("Comentario enviado: " + comentario);
+  
+  // Limpiar el contenido del cuadro de texto
+  document.getElementById("comment").value = "";
+}
