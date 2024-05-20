@@ -19,3 +19,18 @@ function enviarComentario() {
   // Limpiar el contenido del cuadro de texto
   document.getElementById("comment").value = "";
 }
+
+function downloadPDF() {
+  alert("Descarga completa");
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  const swiper = new Swiper('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+});
