@@ -744,7 +744,23 @@ input[type="checkbox"] {
 .botones-de-grado:active {
   transform: translateY(10px); /* Agrega sombreado al hacer clic */
 }
+.contenedor-botones-anterior {
+  padding: 15px 32px;
+  text-align: left;
+  margin-top: 10px;
 
+}
+.botones-anterior{
+  background-color: #f6f5fa;
+  border-radius: black;
+  color: rgb(14, 13, 13);
+  padding: 10px 24px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 25px; /* Espacio horizontal de 1cm entre botones */
+  cursor: pointer;
+}
 /*---------------------------------------------------------------------------------------------------*/
 /* ----- Variables ----- */
 
@@ -1003,3 +1019,5 @@ input[type="checkbox"] {
   text-decoration: underline;
 }
 
+ /*-------------------------------------------------DIPLOMADO----------------------------------------------------*/
+  
