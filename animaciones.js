@@ -26,4 +26,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 1000); // Retraso de 1 segundo
   });
 
-

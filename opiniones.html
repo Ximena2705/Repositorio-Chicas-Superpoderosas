@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Libros</title>
+<link rel="stylesheet" type="text/css" href="estilos/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></head>
+<script src="animaciones2.js"></script>
+<body>
+  <!-- contenedor  aunar Villavicencio-->
+    <div class="contenedor">
+        <h1>Aunar Villavicencio</h1>
+    </div>
+
+    <div class="contenedor contenedor-amarillo">
+      <a href="index.html">
+        <img src="imagenes/aunar_logo_azul.PNG" alt="Imagen" class="imagen">
+      </a>
+        
+
+  <!-- Botones 1 -->
+  <div class="botones">
+
+    <input type="checkbox" id="botonDesplegable1">
+    <label for="botonDesplegable1" class="boton boton1">Admisiones</label>
+
+    <input type="checkbox" id="botonDesplegable2">
+    <label for="botonDesplegable2" class="boton boton2">Estudiantes</label>
+
+    <input type="checkbox" id="botonDesplegable3">
+    <label for="botonDesplegable3" class="boton boton3">Docentes</label>
+
+    <input type="checkbox" id="botonDesplegable4">
+    <label for="botonDesplegable4" class=" boton4">Expoinnova</label>
+
+    <input type="checkbox" id="botonDesplegable5">
+    <label for="botonDesplegable5" class="boton5">Noticias</label>
+  </div>
+    </div>
+
+
+    <div class="contenedor contenedor-azul">
+        <div class="botones1">
+
+    <input type="checkbox" id="botonD1">
+    <label for="botonD1" class="botonn boton11">Institucional</label>
+
+    <input type="checkbox" id="botonD2">
+    <label for="botonD2" class="botonn boton22">Programas</label>
+
+    <input type="checkbox">
+    <label for="botonD3" class="botonn boton33">Proyeccion social</label>
+
+    <input type="checkbox" id="botonD4">
+    <label for="botonD4" class="botonn boton44">Investigacion</label>
+
+    <input type="checkbox" id="botonD5">
+    <label for="botonD5" class="botonn boton55">Bienestar</label>
+
+    <input type="checkbox" id="botonD6">
+    <label for="botonD5" class="botonn boton66">Internacionalizacion</label>
+
+    <input type="checkbox" id="botonD7">
+    <label for="botonD5" class="botonn boton77">Talento Humano</label>
+    
+    
+  </div>
+    </div>
+    <!--conetendor imagen-->
+   <div class="contenedor-imagen">
+    <img src="imagenes\logo-produccion-editorial.jpeg" alt="Imagen" class="imagen-largo">
+  </div>
+  <div class="contenedor_botonIniciar">
+    <button onclick="redirigir2()">
+      <i class="fas fa-user"></i>
+    </button>
+    <script>
+      function redirigir2() {
+        // Redirigir a otro HTML
+        window.location.href = "perfil.html";
+      }
+    </script>
+    <button onclick="redirigir()">Iniciar sesión</button>
+    <script>
+      function redirigir() {
+        // Redirigir a otro HTML
+        window.location.href = "login.html";
+      }
+    </script>
+  </div>
+
+  <div class="ruta">
+    <ol>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="produccion.html">Producción Editorial</a></li>
+        <li><a href="opiniones.html">Opiniones</a></li>
+    </ol>
+</div>
+ 
+<div class="opiniones">
+    <div class="fila">
+        <div class="opinion">
+            <div class="perfil-opinion">
+            <img src="imagenes\usuarios\juan_ramirez.webp" alt="Foto de perfil">
+            <span class="nombre">Juan Ramírez</span>
+            </div>
+            <div class="comentario">
+            <p>La universidad ofrece una amplia variedad de programas
+                académicos y oportunidades de investigación que han ampliado
+                mi horizonte intelectual y profesional.</p>
+            </div>
+            <div class="valoracion">
+            <span class="like">👍</span>
+            <span class="dislike">👎</span>
+            </div>
+        </div>
+        <div class="opinion">
+            <div class="perfil-opinion">
+            <img src="imagenes\usuarios\maria_gonzalez.webp" alt="Foto de perfil">
+            <span class="nombre">María González</span>
+            </div>
+            <div class="comentario">
+            <p>Los profesores son increíblemente accesibles y están comprometidos
+                con el éxito de los estudiantes. Siempre están dispuestos a brindar
+                apoyo adicional fuera del aula.</p>
+            </div>
+            <div class="valoracion">
+            <span class="like">👍</span>
+            <span class="dislike">👎</span>
+            </div>
+        </div>
+        <div class="opinion">
+            <div class="perfil-opinion">
+            <img src="imagenes\usuarios\pedro_lopez.webp" alt="Foto de perfil">
+            <span class="nombre">Pedro López</span>
+            </div>
+            <div class="comentario">
+            <p>El ambiente diverso y multicultural en el campus ha enriquecido
+                mi experiencia universitaria, permitiéndome aprender y crecer
+                tanto académica como personalmente.</p>
+            </div>
+            <div class="valoracion">
+            <span class="like">👍</span>
+            <span class="dislike">👎</span>
+            </div>
+        </div>
+    </div>
+    <div class="fila">
+        <div class="opinion">
+            <div class="perfil-opinion">
+            <img src="imagenes\usuarios\laura_garcia.webp" alt="Foto de perfil">
+            <span class="nombre">Laura García</span>
+            </div>
+            <div class="comentario">
+            <p>La universidad ofrece una amplia gama de recursos y servicios de apoyo,
+                desde tutorías hasta asesoramiento profesional, que han sido fundamentales
+                para mi desarrollo académico y profesional.</p>
+            </div>
+            <div class="valoracion">
+            <span class="like">👍</span>
+            <span class="dislike">👎</span>
+            </div>
+        </div>
+        <div class="opinion">
+            <div class="perfil-opinion">
+            <img src="imagenes\usuarios\carlos_martinez.webp" alt="Foto de perfil">
+            <span class="nombre">Carlos Martínez</span>
+            </div>
+            <div class="comentario">
+            <p>Las instalaciones y la tecnología disponibles en el campus son de primera
+                calidad, lo que facilita el aprendizaje y la realización de proyectos innovadores.</p>
+            </div>
+            <div class="valoracion">
+            <span class="like">👍</span>
+            <span class="dislike">👎</span>
+            </div>
+        </div>
+        <div class="opinion">
+            <div class="perfil-opinion">
+            <img src="imagenes\usuarios\ana_rojas.webp" alt="Foto de perfil">
+            <span class="nombre">Ana Rojas</span>
+            </div>
+            <div class="comentario">
+            <p>La universidad fomenta un ambiente de colaboración y trabajo en equipo,
+                lo que me ha permitido establecer conexiones significativas con mis
+                compañeros de clase y desarrollar habilidades de liderazgo.</p>
+            </div>
+            <div class="valoracion">
+            <span class="like">👍</span>
+            <span class="dislike">👎</span>
+            </div>
+        </div>
+    </div>
+    <div class="fila">
+        <div class="opinion">
+            <div class="perfil-opinion">
+            <img src="imagenes\usuarios\marta_ramirez.webp" alt="Foto de perfil">
+            <span class="nombre">Marta Ramírez</span>
+            </div>
+            <div class="comentario">
+            <p>La universidad proporciona oportunidades de aprendizaje experiencial,
+                como pasantías y proyectos de investigación, que han sido fundamentales
+                para mi crecimiento profesional y la aplicación de conocimientos en el mundo real.</p>
+            </div>
+            <div class="valoracion">
+            <span class="like">👍</span>
+            <span class="dislike">👎</span>
+            </div>
+        </div>
+        <div class="opinion">
+            <div class="perfil-opinion">
+            <img src="imagenes\usuarios\david_lopez.webp" alt="Foto de perfil">
+            <span class="nombre">David López</span>
+            </div>
+            <div class="comentario">
+            <p>El programa de mentoría de la universidad me ha brindado orientación
+                y consejos personalizados para alcanzar mis metas académicas y profesionales,
+                lo que me ha dado una ventaja invaluable en mi carrera.</p>
+            </div>
+            <div class="valoracion">
+            <span class="like">👍</span>
+            <span class="dislike">👎</span>
+            </div>
+        </div>
+        <div class="opinion">
+            <div class="perfil-opinion">
+            <img src="imagenes\usuarios\claudia_hernandez.webp" alt="Foto de perfil">
+            <span class="nombre">Claudia Hernández</span>
+            </div>
+            <div class="comentario">
+            <p>El compromiso de la universidad con la innovación y la excelencia
+                académica se refleja en la calidad de la educación que recibimos. 
+                Me siento inspirada y motivada a alcanzar mis objetivos gracias al
+                ambiente de aprendizaje estimulante que ofrece la institución.</p>
+            </div>
+            <div class="valoracion">
+            <span class="like">👍</span>
+            <span class="dislike">👎</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="comment-box">
+  <textarea id="comment" placeholder="Escribe un comentario aquí"></textarea>
+  <button onclick="enviarComentario()">Enviar</button>
+</div>
+
+    <!--conetendor imagenes y botones-->
+
+  <div class="contenedor-final-azul">
+    <div class="redes-sociales">Redes Sociales <br>
+      <a href="https://www.facebook.com/aunarvillavo?mibextid=ZbWKwL">
+        <img src="imagenes\logo facebook.webp" alt="facebook">
+      </a>
+      <a href="https://www.instagram.com/aunarvillavo?igsh=MjJ6dXNteHBqMnlk">
+        <img src="imagenes\logo instagram.webp" alt="instagram">
+      </a>
+     </div>
+    
+    <img width="290" height="128" src="imagenes/aunar_logo_blanco.png" class="imagen-abajo-redes" alt="Imagen de redes sociales"> <!-- Imagen de redes sociales -->
+    <div class="linea-horizontal"></div>
+    <div class="linea-horizontal1"></div>
+    <div class="linea-vertical"></div> 
+  
+  <div class="texto-derecha">
+    <p>Corporación universitaria Autónoma de Nariño</p>
+    <p>NIT: 891224762-9</p>
+    <p>Código SNIES: 3017</p>
+    <p>Vía Puerto López, km. 2.</p>
+    <p>Margen izquierda</p>
+    <p>PBX: 608 681 9340 / Exts.</p>
+    <p>Villavicencio, Meta-Colombia</p>
+  </div>
+  <div class="texto-abajo">
+    <p>"INSTITUCIÓN DE EDUCACIÓN SUPERIOR SUJETA A  INSPECCIÓN Y VIGILANCIA POR EL MINISTERIO DE EDUCACIÓN NACIONAL"</p>
+    <p>Personería Jurídica No. 1054 del 1 de Febrero de 1983</p>
+    <p>©Copyright 2022 – Derechos Reservados</p>
+  </div>
+  </div>
+  
+</body>
+</html>

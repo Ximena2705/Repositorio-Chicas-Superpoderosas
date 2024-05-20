@@ -848,7 +848,7 @@ input[type="checkbox"] {
   }
   
   a:hover {
-    color: #ffeb3b;
+    color: #034873;
   }
   
   .boton-ingresar {
@@ -922,17 +922,53 @@ input[type="checkbox"] {
   }
 
   /*----------------------------------------LIBROS-------------------------------*/
-  
-
-  .container-busquedapor {
-    display: flex;
-    flex-direction: column; /* Apila los elementos verticalmente */
-    width: 400px;
+  .ruta {
     margin-left: 25px;
-    border: 1px solid #ccc; /* Agrega un borde de color gris */
-    border-radius: 5px; /* Agrega bordes redondeados */
-    padding: 10px; 
-    position: relative;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  
+  .ruta ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .ruta ol li {
+    display: inline;
+  }
+  
+  .ruta ol li:not(:last-child):after {
+    content: " / ";
+    margin: 0 5px;
+  }
+  
+  .ruta ol li a {
+    text-decoration: none;
+    color: #0366d6; /* Color azul, puedes cambiarlo según tus preferencias */
+  }
+  
+  .ruta ol li a:hover {
+    text-decoration: underline;
+  }
+
+  .container-general {
+    display:flex;
+    justify-content: space-between;
+  }
+ 
+
+.container-busquedapor {
+  width: 400px; /* Establece el ancho a 400px */
+  border: 1px solid #ccc; /* Borde sólido de 1px de grosor y color gris claro */
+  border-radius: 5px;
+  height: 300px;
+  margin-left: 30px;
+
+  flex-direction: column; /* Apila los elementos verticalmente */
+  padding: 10px; 
+  position: relative;
+  margin-right: 25px;
 }
 
 .boton-busqueda {
@@ -989,20 +1025,225 @@ input[type="checkbox"] {
   border-color: #034873;
 }
 
-.ruta {
-  margin-left: 25px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+
+.book-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Espacio entre los contenedores de libros */
+  margin-right: 15px;
 }
 
-.ruta ol {
-  list-style: none;
-  padding: 0;
+.book {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.book-cover {
+  margin-right: 20px;
+}
+
+.book-cover img {
+  max-width: 150px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+}
+
+.book-details {
+  flex: 1;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+  margin-top: 10px;
+}
+
+.download-button, .view-article-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #034873;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none; /* Remove underline from link */
+  justify-content: center;
+}
+
+.download-button:hover, .view-article-button:hover {
+  background-color: #0056b3;
+}
+/*----------------------------------------------opiniones-------------------------------------*/
+.perfil-opinion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.perfil-opinion img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nombre {
+  font-weight: bold;
+}
+
+.comentario {
+  margin-bottom: 10px;
+}
+
+.valoracion span {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.like, .dislike {
+  font-size: 1.5em;
+  cursor: pointer; /* Agregamos un cursor de puntero */
+}
+
+.like.clicked {
+  color: green; /* Cambiar el color al hacer clic */
+  /* Otras animaciones o estilos que desees aplicar */
+  transition: color 0.3s ease; /* Transición suave del color */
+}
+
+.like.clicked::after {
+  content: "\2714"; /* Cambiar el contenido del icono */
+}
+
+.opinion.clicked {
+  background-color: #f0f0f0; /* Cambiamos el color de fondo cuando se hace clic */
+  /* Otras animaciones o estilos que desees aplicar */
+  transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.opiniones {
+  display: flex;
+  flex-direction: column;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.opinion {
+  width: calc(33.33% - 20px); /* Se resta el doble del margen deseado */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 10px; /* Margen a la izquierda */
+  margin-right: 10px; /* Margen a la derecha */
+  text-align: justify;
+}
+
+.comment-box {
+  width: 80%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+.comment-box textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.comment-box button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.comment-box button:hover {
+  background-color: #45a049;
+}
+
+/*-----------------------------------------------Revistas------------------------------------------------------*/
+
+.swiper-container {
+  width: 100%;
+  
+  position: relative; /* Añadido para permitir el posicionamiento de las flechas */
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  margin-left: 260px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-next {
+  margin-right: 45px;
+}
+
+.swiper-button-prev {
+  margin-left: 45px;
+}
+.swiper-container button{
+  margin-left: 660px;
+}
+
+.swiper-container h3{
+  font-size: 35px;
+  text-align: center;
+  color: #034873;;
+}
+
+.swiper-container h2{
+  margin-left: 20px;
+}
+
+.uploader-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Espacio entre la info del uploader y la imagen principal */
+  margin-left: 30px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px; /* Espacio entre la imagen de perfil y el texto */
+}
+
+.uploader-info p {
   margin: 0;
 }
 
-.ruta ol li {
-  display: inline;
+.main-image {
+  max-width: 100%;
+  height: auto;
 }
 
 .ruta ol li:not(:last-child):after {
@@ -1018,6 +1259,116 @@ input[type="checkbox"] {
 .ruta ol li a:hover {
   text-decoration: underline;
 }
+/*-----------------------------------------------Diplomado------------------------------------------------------*/
+.contenedor-diplomado {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 130vh;
+  margin: auto 30px;
+ 
+}
+.cuadro-diplomado {
+  width: 380px;
+  height: 350px;
+  background-color: rgb(228, 240, 185);
+  border-radius: 10px;
+  margin-right: 20px;
+  padding: 20px;
+  border: 1px solid black; /* Agregar borde 3D negro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agregar sombra */
+}
 
- /*-------------------------------------------------DIPLOMADO----------------------------------------------------*/
+.cuadro-diplomado h2 {
+  margin-top: 0;
+}
+.busqueda-diplomado {
+  margin-bottom: 30px;
+}
+
+.busqueda-diplomado input[type="text"] {
+  width: calc(100% - 20px); 
+}
+
+.botones-diplomado {
+  display: flex;
+  flex-direction: column;
+}
+.boton-diplomado {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #034873;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.boton-diplomado:hover {
+  background-color: #0662c4;
+}
+.info-diplo {
+  padding-left: 10px; /* Espacio entre el cuadro y el título/párrafo */
+}
+.info-diplo h3 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Roboto Slab', serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.botones-izquierda-diplomado {
+  margin-top: 10px; 
+  text-align: center;
+}
+.botones-izquierda-diplomado {
+  width: 27cm; 
+  margin: 0px; 
+  padding: 0px 10px; 
+  font-size: 16px; 
+  border: none; 
+  border-radius: #fcfcfc; 
+  cursor: pointer; 
+}
+.botones-izquierda-diplomado button{
+  margin-bottom: 10px;
+  width: 10cm;
+  padding: 10px;
+  border: none;
+  background-color: #034873;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 20px;
+}
+.botones-izquierda-diplomado:last-child {
+  margin-right: 0;
+}
+.boton-izquierda-diplomado:hover {
+  background-color: #1758a7;
   
+}
+.contenedor-imagen-diplomado {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.imagen-diplomado {
+  width: 200px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: auto;
+  margin-right: 20px;
+}
+
+.informacion-diplomado {
+  flex: 1;
+}
+
+.titulo-diplomado{
+  font-weight: bold;
+}
+
+.descripcion-diplomado{
+  margin-top: 5px;
+}

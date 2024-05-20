@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Libros</title>
+<title>Artículos</title>
 <link rel="stylesheet" type="text/css" href="estilos/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></head>
 <script src="animaciones2.js"></script>
@@ -94,7 +94,7 @@
     <ol>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="produccion.html">Producción Editorial</a></li>
-        <li><a href="libros.html">Libros</a></li>
+        <li><a href="articulos.html">Artículos</a></li>
     </ol>
 </div>
   
@@ -117,47 +117,65 @@
   </div>
   <div class="book-container">
     <!-- Contenido del contenedor derecho -->
-    <h2>Libros más leídos</h2>
+    <h2>Artículos más relevantes</h2>
     <div class="book">
         <div class="book-cover">
           <!-- Aquí puedes poner la imagen de la portada del libro -->
-          <img src="imagenes\biblioteca\libro1.jpg" alt="Portada del libro">
+          <img src="imagenes\biblioteca\articulo1.png" alt="Portada del libro">
         </div>
         <div class="book-details">
-          <h2>Fundamentos de Contabilidad</h2>
-          <p>Fecha de Publicación: <span id="publication-date">2018</span></p>
-          <p>Autores: <span id="authors">María González, Juan Ramírez</span></p>
-          <p>Temas: <span id="topics">Principios de contabilidad, Análisis financiero, Auditoría, Normas internacionales de información financiera (NIIF)</span></p>
-          <p>Directores: <span id="directors">Dr. José Martínez, Dr. Ana López</span></p>
-          <button class="download-button" onclick="downloadPDF()">Descargar PDF</button>
+          <h2>Aplicaciones de Inteligencia Artificial en la Seguridad Informática</h2>
+          <p>Fecha de Publicación: <span id="publication-date">2023</span></p>
+          <p>Autores: <span id="authors">David López</span></p>
+          <p>Temas: <span id="topics">Inteligencia Artificial
+            , Seguridad Informática
+            , Detección de Intrusos
+            , Aprendizaje Automático</span></p>
+          <p>Directores: <span id="directors">Dr. Javier Rodríguez, Dra. Ana Torres</span></p>
+          <div class="button-container">
+            <button class="download-button" onclick="downloadPDF()">Descargar PDF</button>
+            <a href="https://www.researchgate.net/publication/292134197_Aplicacion_de_tecnicas_de_inteligencia_artificial_en_la_seguridad_informatica_un_estudio" class="view-article-button">Ver artículo</a>
+          </div>
         </div>
     </div>
     <div class="book">
       <div class="book-cover">
         <!-- Aquí puedes poner la imagen de la portada del libro -->
-        <img src="imagenes\biblioteca\libro2.jpg" alt="Portada del libro">
+        <img src="imagenes\biblioteca\articulo2.jpg" alt="Portada del libro">
       </div>
       <div class="book-details">
-        <h2>Sistema de Gestión de la Seguridad y Salud en el Trabajo</h2>
-        <p>Fecha de Publicación: <span id="publication-date">2020</span></p>
-        <p>Autores: <span id="authors">Pedro López, Claudia Hernández</span></p>
-        <p>Temas: <span id="topics">Legislación en seguridad y salud ocupacional, Evaluación de riesgos laborales, Higiene industrial, Ergonomía, Planificación de emergencias</span></p>
-        <p>Directores: <span id="directors">Dr. Carlos Rodríguez, Dra. Isabel Méndez</span></p>
-        <button class="download-button" onclick="downloadPDF()">Descargar PDF</button>
+        <h2>Tendencias Modernas en el Diseño de Interiores Residenciales</h2>
+        <p>Fecha de Publicación: <span id="publication-date">2022</span></p>
+        <p>Autores: <span id="authors">Laura García</span></p>
+        <p>Temas: <span id="topics">Tendencias de Diseño
+            , Espacios Residenciales
+            , Sustentabilidad en el Diseño
+            , Uso de Materiales Naturales</span></p>
+        <p>Directores: <span id="directors">Dra. Isabel Martínez, Dr. Luis Fernández</span></p>
+        <div class="button-container">
+            <button class="download-button" onclick="downloadPDF()">Descargar PDF</button>
+            <a href="https://www.calameo.com/books/003957166b76ae746013a" class="view-article-button">Ver artículo</a>
+          </div>
       </div>
   </div>
   <div class="book">
     <div class="book-cover">
       <!-- Aquí puedes poner la imagen de la portada del libro -->
-      <img src="imagenes\biblioteca\libro3.jpeg" alt="Portada del libro">
+      <img src="imagenes\biblioteca\articulo3.webp" alt="Portada del libro">
     </div>
     <div class="book-details">
-      <h2>Teoría y Práctica de la Administración de Empresas</h2>
-      <p>Fecha de Publicación: <span id="publication-date">2017</span></p>
-      <p>Autores: <span id="authors">Marta Ramírez, Ana Rojas</span></p>
-      <p>Temas: <span id="topics">Gestión estratégica, Marketing, Finanzas corporativas, Recursos humanos, Innovación y emprendimiento</span></p>
+      <h2>El Impacto del Diseño Visual en la Experiencia del Usuario</h2>
+      <p>Fecha de Publicación: <span id="publication-date">2021</span></p>
+      <p>Autores: <span id="authors">Carlos Martínez</span></p>
+      <p>Temas: <span id="topics">Diseño Visual
+        , Experiencia del Usuario (UX)
+        , Interfaz de Usuario (UI)
+        , Usabilidad</span></p>
       <p>Directores: <span id="directors">Dr. Alberto Gómez, Dra. Patricia Sánchez</span></p>
-      <button class="download-button" onclick="downloadPDF()">Descargar PDF</button>
+      <div class="button-container">
+        <button class="download-button" onclick="downloadPDF()">Descargar PDF</button>
+        <a href="https://es.scribd.com/document/493567046/Que-Es-Experiencia-de-Usuario" class="view-article-button">Ver artículo</a>
+      </div>
     </div>
 </div>
     

@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Libros</title>
+<title>Revistas</title>
 <link rel="stylesheet" type="text/css" href="estilos/style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></head>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 <script src="animaciones2.js"></script>
 <body>
   <!-- contenedor  aunar Villavicencio-->
@@ -94,77 +95,63 @@
     <ol>
         <li><a href="index.html">Inicio</a></li>
         <li><a href="produccion.html">Producción Editorial</a></li>
-        <li><a href="libros.html">Libros</a></li>
+        <li><a href="revistas.html">Revistas</a></li>
     </ol>
 </div>
-  
-<div class="container-general">
-    <!-- Contenido del contenedor izquierdo -->
-    <div class="container-busquedapor">
-      <div class="container-buscarpor">
-        <input type="text" class="buscar" placeholder="Buscar...">
-        <button class="boton-busqueda">
-            <i class="fas fa-search"></i> 
-        </button>
-    </div>
-      <div class="container-filtrar">
-          <button class="filtrar-item">Fecha de publicación</button>
-          <button class="filtrar-item">Autores</button>
-          <button class="filtrar-item">Títulos</button>
-          <button class="filtrar-item">Temas</button>
-          <button class="filtrar-item">Directores</button>
+
+<div class="swiper-container">
+    <h3>Revistas más populares</h3>
+    <h2>Tendencias en Decoración y Diseño de Interiores</h2>
+    <div class="uploader-info">
+            <img src="imagenes\usuarios\laura_garcia.webp" alt="Foto de perfil" class="profile-pic">
+            <p>Subido por Laura García</p>
+          </div>
+    <div class="swiper-wrapper">
+        
+      <!-- Cada div con clase swiper-slide representa una página de la revista -->
+      <div class="swiper-slide">
+        <img src="imagenes\biblioteca\portada1.jpg" alt="Tendencias en decoración y diseño de interiores">
       </div>
-  </div>
-  <div class="book-container">
-    <!-- Contenido del contenedor derecho -->
-    <h2>Libros más leídos</h2>
-    <div class="book">
-        <div class="book-cover">
-          <!-- Aquí puedes poner la imagen de la portada del libro -->
-          <img src="imagenes\biblioteca\libro1.jpg" alt="Portada del libro">
-        </div>
-        <div class="book-details">
-          <h2>Fundamentos de Contabilidad</h2>
-          <p>Fecha de Publicación: <span id="publication-date">2018</span></p>
-          <p>Autores: <span id="authors">María González, Juan Ramírez</span></p>
-          <p>Temas: <span id="topics">Principios de contabilidad, Análisis financiero, Auditoría, Normas internacionales de información financiera (NIIF)</span></p>
-          <p>Directores: <span id="directors">Dr. José Martínez, Dr. Ana López</span></p>
-          <button class="download-button" onclick="downloadPDF()">Descargar PDF</button>
-        </div>
-    </div>
-    <div class="book">
-      <div class="book-cover">
-        <!-- Aquí puedes poner la imagen de la portada del libro -->
-        <img src="imagenes\biblioteca\libro2.jpg" alt="Portada del libro">
+      <div class="swiper-slide">
+        <img src="imagenes\biblioteca\pagina1.jpg" alt="Página 1 de la revista 1">
       </div>
-      <div class="book-details">
-        <h2>Sistema de Gestión de la Seguridad y Salud en el Trabajo</h2>
-        <p>Fecha de Publicación: <span id="publication-date">2020</span></p>
-        <p>Autores: <span id="authors">Pedro López, Claudia Hernández</span></p>
-        <p>Temas: <span id="topics">Legislación en seguridad y salud ocupacional, Evaluación de riesgos laborales, Higiene industrial, Ergonomía, Planificación de emergencias</span></p>
-        <p>Directores: <span id="directors">Dr. Carlos Rodríguez, Dra. Isabel Méndez</span></p>
+      <div class="swiper-slide">
+        <img src="imagenes\biblioteca\pagina2.jpg" alt="Página 2 de la revista 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="imagenes\biblioteca\pagina3.jpg" alt="Página 3 de la revista 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="imagenes\biblioteca\pagina4.jpg" alt="Página 4 de la revista 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="imagenes\biblioteca\pagina5.jpg" alt="Página 5 de la revista 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="imagenes\biblioteca\pagina6.jpg" alt="Página 6 de la revista 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="imagenes\biblioteca\pagina7.jpg" alt="Página 7 de la revista 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="imagenes\biblioteca\pagina8.jpg" alt="Página 8 de la revista 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="imagenes\biblioteca\pagina9.jpg" alt="Página 9 de la revista 1">
+      </div>
+      <!-- Añade más páginas según sea necesario -->
+    </div>
+    <!-- Añade botones de navegación si es necesario -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="button-container">
         <button class="download-button" onclick="downloadPDF()">Descargar PDF</button>
+        <a href="https://www.elledecor.com/es/decoracion/g39759544/tendencias-decoracion-diseno-interiores/" class="view-article-button">Ver información</a>
       </div>
-  </div>
-  <div class="book">
-    <div class="book-cover">
-      <!-- Aquí puedes poner la imagen de la portada del libro -->
-      <img src="imagenes\biblioteca\libro3.jpeg" alt="Portada del libro">
-    </div>
-    <div class="book-details">
-      <h2>Teoría y Práctica de la Administración de Empresas</h2>
-      <p>Fecha de Publicación: <span id="publication-date">2017</span></p>
-      <p>Autores: <span id="authors">Marta Ramírez, Ana Rojas</span></p>
-      <p>Temas: <span id="topics">Gestión estratégica, Marketing, Finanzas corporativas, Recursos humanos, Innovación y emprendimiento</span></p>
-      <p>Directores: <span id="directors">Dr. Alberto Gómez, Dra. Patricia Sánchez</span></p>
-      <button class="download-button" onclick="downloadPDF()">Descargar PDF</button>
-    </div>
-</div>
-    
-  </div>
-  
-</div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
  
+  
+
   
     <!--conetendor imagenes y botones-->
 
