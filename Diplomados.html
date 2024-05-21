@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="estilos/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" crossorigin="anonymous" />
+
 </head>
 <body>
    <!-- contenedor  aunar Villavicencio-->
@@ -68,36 +70,75 @@
     </div>
 </div>
 
-<div class="contenedor-diplomado">
-  <div class="cuadro-diplomado">
-    <h2>Buscar</h2>
-    <p>Ingrese el término de su busqueda:</p>
-    <div class="busqueda-diplomado">
-      <input type="text" placeholder="Buscar...">
-    </div>
-    <div class="botones-diplomado">
-      <button class="boton-diplomado">Título</button>
-      <button class="boton-diplomado">Autores</button>
-      <button class="boton-diplomado">Tema</button>
-      <button class="boton-diplomado">Fecha</button>
-    </div>
-  </div>
-  <div class="info-diplo">
-    <h3>Diplomado</h3>
-    <p>Nuestro diplomado universitario ofrece conocimientos especializados y prácticos en un área específica. 
-      Impartido por expertos, combina teoría actualizada con aplicaciones prácticas. 
-      Obtén un certificado reconocido que te brindará ventajas profesionales y nuevas oportunidades laborales.</p>
-    <div class="botones-izquierda-diplomado">
-      <button class="boton-izquierda-diplomado"id="virtual-btn">Virtual</button>
-    </div>
-    <div class="botones-izquierda-diplomado">
-      <button class="boton-izquierda-diplomado" id="presencial-btn">Presencial</button>
-    </div>
-    <div class="imagenes-diplomado" id="imagenes-diplomado">
-    </div>
-  </div>
-
+  <div class="busqueda-diplomado">
+    
+    <a href="index.html">
+      <i class="fas fa-home"></i> Inicio
+    </a>
+    
+    <a href="tesis.html">
+      <i class=""></i> / Trabajos de grado
+    </a>
+  <div class="contenedor-diplomado">
+  <button class="boton-diplomado">Título</button>
+  <button class="boton-diplomado">Autor</button>
+  <button class="boton-diplomado">Tema</button>
+  <button class="boton-diplomado">Fecha</button>
 </div>
+  <input type="text" placeholder="Buscar...">
+  <button class="boton-buscar-diplomado">Buscar</button>
+</div>
+<div class="contenedor-cuadros-diplomado">
+  <div class="cuadro-diplomado">
+      <h2>Diplomado Ciberseguridad</h2>
+      <img src="imagenes/diplomado/diplomado ciberseguridad.PNG" alt="">
+      <p>Autor: David Céspedes Casanora</p>
+      <p>Fecha de publicación: 2021</p>
+      <p class="modalidad">Modalidad presencial</p>
+      <button class="boton-descargar-diplomado" onclick="alert('Ha sido descargado correctamente')">Descargar</button>
+  </div>
+  <div class="cuadro-diplomado">
+    <h2>Diplomado Hacking Ético</h2>
+    <img src="imagenes/diplomado/hacking_etico_diplo.PNG" alt="">
+    <p>Autor: Patricio Aurelio Cuadra</p>
+    <p>Fecha de publicación: 2021</p>
+    <p class="modalidad">Modalidad virtual</p>
+      <button class="boton-descargar-diplomado" onclick="alert('Ha sido descargado correctamente')">Descargar</button>
+  </div>
+  <div class="cuadro-diplomado">
+    <h2>Diplomado Redes y Servicios Telemáticos</h2>
+    <img src="imagenes/diplomado/redes_servicios_telematicos.PNG" alt="">
+    <p>Autor: Henry Hernán Bolaños</p>
+    <p>Fecha de publicación: 2022</p>
+    <p class="modalidad">Modalidad virtual</p>
+      <button class="boton-descargar-diplomado" onclick="alert('Ha sido descargado correctamente')">Descargar</button>
+  </div>
+  <div class="cuadro-diplomado">
+    <h2>Diplomado en DevOps y Automatización</h2>
+    <img src="imagenes/diplomado/deveOps.PNG" alt="">
+    <p>Autor: Ana Sofía Vergara</p>
+    <p>Fecha de publicación: 2022</p>
+    <p class="modalidad">Modalidad presencial</p>
+      <button class="boton-descargar-diplomado" onclick="alert('Ha sido descargado correctamente')">Descargar</button>
+  </div>
+  <div class="cuadro-diplomado">
+    <h2>Diplomado en Gestión de Proyectos de TI</h2>
+    <img src="imagenes/diplomado/TI.PNG" alt="">
+    <p>Autor: David Alejandro Ballesteros</p>
+    <p>Fecha de publicación: 2023</p>
+    <p class="modalidad">Modalidad presencial</p>
+      <button class="boton-descargar-diplomado" onclick="alert('Ha sido descargado correctamente')">Descargar</button>
+  </div>
+  <div class="cuadro-diplomado">
+    <h2>Diplomado en Desarrollo de Aplicaciones Móviles</h2>
+    <img src="imagenes/diplomado/Diplomado en Desarrollo de Aplicaciones Móviles.PNG" alt="">
+    <p>Autor: Carmen Milena Urbano</p>
+    <p>Fecha de publicación: 2023</p>
+    <p class="modalidad">Modalidad virtual</p>
+      <button class="boton-descargar-diplomado" onclick="alert('Ha sido descargado correctamente')">Descargar</button>
+  </div>
+</div>
+ 
   
 
   <div class="contenedor-final-azul">
@@ -131,5 +172,10 @@
   </div>
   </div>
   <script src="diplomado.js"></script>
+  <script>
+  function descargarPDF() {
+      alert("Ha sido descargado");
+  }
+  </script>
 </body>
 </html>

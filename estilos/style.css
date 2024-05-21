@@ -1262,115 +1262,106 @@ input[type="checkbox"] {
 /*-----------------------------------------------Diplomado------------------------------------------------------*/
 .contenedor-diplomado {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: flex-start;
-  height: 130vh;
-  margin: auto 30px;
- 
-}
-.cuadro-diplomado {
-  width: 380px;
-  height: 350px;
-  background-color: rgb(228, 240, 185);
-  border-radius: 10px;
-  margin-right: 20px;
   padding: 20px;
-  border: 1px solid black; /* Agregar borde 3D negro */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Agregar sombra */
+  background-color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.boton-diplomado {
+  margin: 10px 0; 
+  margin: 0 10px;
+  padding: 10px 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px; 
+  background-color: #d8e4f1;
+  color: rgb(7, 7, 7);
+  border: 1px solid #161718; 
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px #a0a6ac;
+}
+
+.boton-diplomado:hover {
+  background-color: #dfeeff;
+}
+
+.busqueda-diplomado {
+  margin-top: 200px;
+  margin-left: 20px; /* Espacio entre los botones y la barra de búsqueda */
+  align-items: center;
+  
+}
+
+.busqueda-diplomado input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 1200px;
+}
+
+.boton-buscar-diplomado {
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-buscar-diplomado:hover {
+  background-color: #0056b3;
+}
+
+.contenedor-cuadros-diplomado {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.cuadro-diplomado {
+  background-color: white;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(33% - 40px); /* Tres cuadros por fila */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .cuadro-diplomado h2 {
   margin-top: 0;
 }
-.busqueda-diplomado {
-  margin-bottom: 30px;
-}
 
-.busqueda-diplomado input[type="text"] {
-  width: calc(100% - 20px); 
-}
-
-.botones-diplomado {
-  display: flex;
-  flex-direction: column;
-}
-.boton-diplomado {
-  margin-bottom: 10px;
-  padding: 10px;
-  border: none;
-  background-color: #034873;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.boton-diplomado:hover {
-  background-color: #0662c4;
-}
-.info-diplo {
-  padding-left: 10px; /* Espacio entre el cuadro y el título/párrafo */
-}
-.info-diplo h3 {
+.boton-descargar-diplomado {
   margin-top: 10px;
-  text-align: center;
-  font-size: 36px;
-  font-family: 'Roboto Slab', serif;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-}
-.botones-izquierda-diplomado {
-  margin-top: 10px; 
-  text-align: center;
-}
-.botones-izquierda-diplomado {
-  width: 27cm; 
-  margin: 0px; 
-  padding: 0px 10px; 
-  font-size: 16px; 
-  border: none; 
-  border-radius: #fcfcfc; 
-  cursor: pointer; 
-}
-.botones-izquierda-diplomado button{
-  margin-bottom: 10px;
-  width: 10cm;
-  padding: 10px;
-  border: none;
-  background-color: #034873;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #28a745;
   color: white;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 20px;
 }
-.botones-izquierda-diplomado:last-child {
-  margin-right: 0;
+
+.boton-descargar-diplomado:hover {
+  background-color: #218838;
 }
-.boton-izquierda-diplomado:hover {
-  background-color: #1758a7;
-  
+.modalidad{
+  color:#666464;
 }
-.contenedor-imagen-diplomado {
-  display: flex;
-  align-items: center;
+.contenedor_boton-diplomado{
   margin-top: 20px;
-}
-
-.imagen-diplomado {
-  width: 200px; /* Ajusta el ancho de la imagen según sea necesario */
-  height: auto;
-  margin-right: 20px;
-}
-
-.informacion-diplomado {
-  flex: 1;
-}
-
-.titulo-diplomado{
-  font-weight: bold;
-}
-
-.descripcion-diplomado{
-  margin-top: 5px;
 }
 /*----------------------------------Investigación semilleros-------------------------------------------------------- */
 .contenedor-semillero {
@@ -1431,6 +1422,6 @@ a i {
 
 .semillero i i { /* Posiciona el icono dentro del elemento i de forma absoluta */
   position: absolute;
-  top: -50%; /* Posiciona el icono verticalmente en el centro */
+  top: -55%; /* Posiciona el icono verticalmente en el centro */
   right: 10px; /* Agrega un margen derecho al icono */
 }
