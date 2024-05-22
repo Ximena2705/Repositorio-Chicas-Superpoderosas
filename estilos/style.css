@@ -1425,3 +1425,161 @@ a i {
   top: -55%; /* Posiciona el icono verticalmente en el centro */
   right: 10px; /* Agrega un margen derecho al icono */
 }
+
+/*----------------------------------Pregrado-------------------------------------------------------- */
+
+.container-top {
+  background-color: #f9fafa;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #c4c0c0;
+}
+
+.container-bottom-pregrado {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #e9ecef;
+  padding: 20px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
+.sidebar button {
+  background-color: #034873;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3;
+}
+
+.main-content-pregrado {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-box {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #0c0c0c;
+  gap: 20px;
+}
+
+.content-box img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.text-content {
+  flex-grow: 1;
+}
+
+.text-content h2 {
+  margin: 0 0 10px 0;
+}
+
+.content-box button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.content-box button:hover {
+  background-color: #218838;
+}
+.search-box-pregrado {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-box-pregrado input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search-box-pregrado .search-btn-pregrado {
+  background-color: #89c1fd;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.search-box-pregrado .search-btn-pregrado:hover {
+  background-color: #0056b3;
+}
+
+.botones-de-grado-pregrado {
+  margin-top: 15px;
+  margin-right: 10px; 
+  padding: 15px 20px;
+  gap: 20px;
+  font-size: 16px;
+  background-color: #a1a7a2;
+  color: rgb(8, 7, 48);
+  border: none;
+  border-radius: 5px;
+  border:#000;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botones-de-grado-pregrado:hover {
+  background-color: #343835;
+  color:#fffbfb;
+}
+.botones-de-grado-pregrado{
+  margin-top: 10px;
+  gap: 20px;
+}
+.text-content-pregrado h1{
+  font-size: 17px;
+}
+.pregrado-letra{
+  color:#3d3c3c;
+}
+/*-----------------------facultad de ingenieria------------*/
+.titulo-ingenieria{
+  font-size: 80px;
+  font-size: 48px;
+  color: #333;
+  text-shadow: 
+    1px 1px 0 #ccc, 
+    2px 2px 0 #ccc, 
+    3px 3px 0 #ccc, 
+    4px 4px 0 #ccc, 
+    5px 5px 0 #ccc, 
+    6px 6px 0 #a1a0a0;
+    transform: translateZ(10px);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.ingenieria-grado{
+  font-size: 15px;
+}
