@@ -638,7 +638,7 @@ input[type="checkbox"] {
   justify-content: space-between; /* Alinea los elementos a los extremos */
   max-width: 800px; /* Ajusta el ancho máximo según sea necesario */
   margin: 0 auto; /* Centra el contenedor horizontalmente */
-  
+  margin-bottom: 20px;
 }
 .perfil {
   width: calc(66.66% - 10px); /* Ancho del perfil */
