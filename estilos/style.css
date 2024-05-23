@@ -1289,9 +1289,10 @@ input[type="checkbox"] {
 }
 
 .busqueda-diplomado {
-  margin-top: 200px;
-  margin-left: 20px; /* Espacio entre los botones y la barra de búsqueda */
+  margin-top: 240px;
+  margin-left: 40px; /* Espacio entre los botones y la barra de búsqueda */
   align-items: center;
+  margin-bottom: 20px;
   
 }
 
@@ -1582,4 +1583,126 @@ a i {
 
 .ingenieria-grado{
   font-size: 15px;
+}
+.imagen-ingenieria{
+  width: 1250px;
+  height: 130px;
+  box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.container-top-ingenieria{
+  background-color: #ffffff;
+  text-align: center;
+}
+/*-----------------------Tecnologos y tecnicos------------*/
+.container-tecnologos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.grid-tecnologos {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.grid-tecnologos button {
+  width: 100px;
+  height: 50px;
+  font-size: 16px;
+  left: 20px;
+}
+.linea-debajo {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #000;
+  margin-top: 10px;
+}
+
+.contenedores-tec-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.contenedor-tec-1 {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px; /* Espacio entre los contenedores */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.imagen-tec-1 {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px; /* Espacio entre la imagen y el contenido */
+}
+
+.contenido-tec-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenido-tec-1 h3 {
+  margin: 0 0 10px 0; /* Margen debajo del título */
+}
+
+.contenido-tec-1 p {
+  margin: 0;
+}
+.descargar-pdf {
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.descargar-pdf:hover {
+  background-color: #218838;
+}
+.search-container-tec {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio debajo del campo de búsqueda */
+}
+
+.search-input-tec {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-button-tec {
+  padding: 10px;
+  background-color: #007BFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button-tec:hover {
+  background-color: #0056b3;
+}
+
+.search-icon-tec {
+  width: 20px;
+  height: 20px;
+  stroke: white;
 }
