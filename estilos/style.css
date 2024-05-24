@@ -1430,10 +1430,10 @@ a i {
 /*----------------------------------Pregrado-------------------------------------------------------- */
 
 .container-top {
-  background-color: #f9fafa;
+  background-color: #ffffff;
   padding: 20px;
   text-align: center;
-  border-bottom: 1px solid #c4c0c0;
+  border-bottom: 1px solid #ffffff;
 }
 
 .container-bottom-pregrado {
@@ -1757,3 +1757,51 @@ hr {
   padding: 0 20px;
 }
 
+.referencia-memorias{
+  color:#252323;
+}
+/*---------------------------proyeccion----------------------*/
+.container-proye {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-proye {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.title-proye {
+  font-weight: bold;
+}
+
+.info-proye {
+  margin-left: 10px;
+}
+
+.centered-container-proye {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Esto centra el contenedor en la pantalla */
+}
+
+.centered-box-proye {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.raya {
+  width: 100%;
+  height: 3px; /* Grosor de la raya */
+  background-color: black; /* Color de la raya */
+}
+.raya_m{
+  width: 100%;
+  height: 1px; /* Grosor de la raya */
+  background-color: black; /* Color de la raya */
+}
+.container-top-proye{
+  width: 250px;
+  text-align: center;
+}
