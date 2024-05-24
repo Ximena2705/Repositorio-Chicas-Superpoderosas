@@ -1593,7 +1593,7 @@ a i {
   background-color: #ffffff;
   text-align: center;
 }
-/*-----------------------Tecnologos y tecnicos------------*/
+/*-----------------------Tecnologos y tecnicos------------------*/
 .container-tecnologos {
   display: flex;
   justify-content: center;
@@ -1614,6 +1614,7 @@ a i {
   height: 50px;
   font-size: 16px;
   left: 20px;
+  border-radius: 1%;
 }
 .linea-debajo {
   width: 100%;
@@ -1635,7 +1636,7 @@ a i {
   width: 80%;
   background-color: #fff;
   padding: 20px;
-  margin-bottom: 20px; /* Espacio entre los contenedores */
+  margin-bottom: 20px; 
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -1643,7 +1644,7 @@ a i {
 .imagen-tec-1 {
   width: 100px;
   height: 100px;
-  margin-right: 20px; /* Espacio entre la imagen y el contenido */
+  margin-right: 20px; 
 }
 
 .contenido-tec-1 {
@@ -1652,7 +1653,7 @@ a i {
 }
 
 .contenido-tec-1 h3 {
-  margin: 0 0 10px 0; /* Margen debajo del título */
+  margin: 0 0 10px 0;
 }
 
 .contenido-tec-1 p {
@@ -1675,9 +1676,8 @@ a i {
 .search-container-tec {
   display: flex;
   align-items: center;
-  margin-bottom: 20px; /* Espacio debajo del campo de búsqueda */
+  margin-bottom: 20px; 
 }
-
 .search-input-tec {
   padding: 10px;
   font-size: 16px;
@@ -1706,3 +1706,54 @@ a i {
   height: 20px;
   stroke: white;
 }
+/*---------------------------------------Memorias Institucionales-------------------------------------------------*/
+.container-memorias {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header-memorias {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-memorias h1 {
+  flex: 1;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.content-memorias {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-memorias {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.item-memorias > div {
+  flex: 1;
+  text-align: center;
+}
+
+.event-memorias img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.description-memorias p {
+  margin: 0;
+  padding: 0 20px;
+}
+

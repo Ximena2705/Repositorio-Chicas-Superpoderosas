@@ -66,33 +66,108 @@
     
   </div>
     </div>
-    <!--conetendor imagen-->
-   <div class="contenedor-imagen">
-    <img src="imagenes/logo-memorias.jpeg" alt="Imagen" class="imagen-largo">
-  </div>
-  <div class="contenedor_botonIniciar">
-    <button onclick="redirigir2()">
-      <i class="fas fa-user"></i>
-    </button>
-    <script>
-      function redirigir2() {
-        // Redirigir a otro HTML
-        window.location.href = "perfil.html";
-      }
-    </script>
-    <button onclick="redirigir()">Iniciar sesión</button>
-    <script>
-      function redirigir() {
-        // Redirigir a otro HTML
-        window.location.href = "login.html";
-      }
-    </script>
-  </div>
-    <!--conetendor de busqueda-->
-    <div class="contenedor-barrabusqueda">
-      <input type="text" placeholder="Buscar..." class="input-busqueda">
+    <div class="busqueda-diplomado">
+    
+      <a href="index.html">
+        <i class="fas fa-home"></i> Inicio
+      </a>
+      
+      <a href="tecnicos1.html">
+        <i class=""></i> / Técnologias
+      </a>
     </div>
-    <!--conetendor imagenes y botones-->
+    <div class="container-top">
+      <div class="superior-container">
+        <img class="imagen-ingenieria" src="imagenes/memorias/memorias-institucionales.jpeg" alt="">
+   </div>
+  </div>
+    <div class="container-top">
+      <div class="superior-container">
+          <a href="decoracion.html">
+              <button class="botones-de-grado-pregrado">Tecnología en Decoración de Interiores</button>
+          </a>
+          <a href="gestion_seguridad.html">
+              <button class="botones-de-grado-pregrado">Tecnología en la Gestión de la Seguridad y Salud en el Trabajo</button>
+          </a>
+      </div>
+  
+  </div>
+
+
+
+
+    <div class="container-memorias">
+      <div class="header-memorias">
+          <h1>Evento</h1>
+          <h1>Descripción</h1>
+          <h1>Descarga</h1>
+      </div>
+      <hr>
+      <div class="content-memorias">
+          <div class="item-memorias">
+              <div class="event-memorias">
+                  <img src="path_to_image.jpg" alt="Evento Imagen">
+              </div>
+              <div class="description-memorias">
+                  <p>Descripción del evento 1.</p>
+              </div>
+                <div class="download">
+                  <button class="boton-descargar-diplomado" onclick="alert('Ha sido descargado correctamente')">Descargar</button>
+                </div>
+          </div>
+          <div class="item-memorias">
+              <div class="event-memorias">
+                  <img src="path_to_image.jpg" alt="Evento Imagen">
+              </div>
+              <div class="description-memorias">
+                  <p>Descripción del evento 2.</p>
+              </div>
+              <div class="download">
+                <button class="boton-descargar-diplomado" onclick="alert('Ha sido descargado correctamente')">Descargar</button>
+              </div>
+          </div>
+          <div class="item-memorias">
+              <div class="event-memorias">
+                  <img src="path_to_image.jpg" alt="Evento Imagen">
+              </div>
+              <div class="description-memorias">
+                  <p>Descripción del evento 3.</p>
+              </div>
+              <div class="download">
+                <button class="boton-descargar-diplomado" onclick="alert('Ha sido descargado correctamente')">Descargar</button>
+              </div>
+          </div>
+          <div class="item-memorias">
+              <div class="event-memorias">
+                  <img src="path_to_image.jpg" alt="Evento Imagen">
+              </div>
+              <div class="description-memorias">
+                  <p>Descripción del evento 4.</p>
+              </div>
+              <div class="download">
+                <button class="boton-descargar-diplomado" onclick="alert('Ha sido descargado correctamente')">Descargar</button>
+              </div>
+          </div>
+          <div class="item-memorias">
+              <div class="event-memorias">
+                  <img src="path_to_image.jpg" alt="Evento Imagen">
+              </div>
+              <div class="description-memorias">
+                  <p>Descripción del evento 5.</p>
+              </div>
+              <div class="download">
+                <button class="boton-descargar-diplomado" onclick="alert('Ha sido descargado correctamente')">Descargar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
 
   <div class="contenedor-final-azul">
     <div class="redes-sociales">Redes Sociales <br>
@@ -125,5 +200,15 @@
   </div>
   </div>
   
+  <script>
+    function downloadFile(path) {
+        const link = document.createElement('a');
+        link.href = path;
+        link.download = '';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+</script>
 </body>
 </html>
